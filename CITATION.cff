@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "SORELIA: Tracking and Training the Moving Failure Frontier of Interactive Agents"
+message: "If you use this research prototype, please cite the repository and associated paper."
+type: software
+authors:
+  - family-names: Yavary
+    given-names: Aura
+version: 1.7.0
+date-released: 2026-09-26
