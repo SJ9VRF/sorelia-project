@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520">
+<defs><style>.bg{fill:#0b0e12}.box{fill:#12171d;stroke:#303945;stroke-width:2}.t{font:700 26px Inter,Arial,sans-serif;fill:#f7f4ee}.s{font:400 17px Inter,Arial,sans-serif;fill:#9ca7b2}.a{stroke:#e8c977;stroke-width:4;fill:none;marker-end:url(#m)}.cap{font:800 15px Inter,Arial,sans-serif;fill:#e8c977;letter-spacing:2px}</style><marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#e8c977"/></marker></defs>
+<rect class="bg" width="1400" height="520" rx="28"/><text class="cap" x="55" y="58">SORELIA · CLOSED-LOOP RELIABILITY RESEARCH</text>
+<g transform="translate(55,105)">
+<rect class="box" x="0" y="0" width="190" height="120" rx="18"/><text class="t" x="22" y="47">Evaluate</text><text class="s" x="22" y="77">rollouts + graders</text><text class="s" x="22" y="101">held-out tasks</text>
+<path class="a" d="M198 60 H245"/>
+<rect class="box" x="255" y="0" width="190" height="120" rx="18"/><text class="t" x="277" y="47">Discover</text><text class="s" x="277" y="77">failure events</text><text class="s" x="277" y="101">mechanism clusters</text>
+<path class="a" d="M453 60 H500"/>
+<rect class="box" x="510" y="0" width="190" height="120" rx="18"/><text class="t" x="532" y="47">Track</text><text class="s" x="532" y="77">stable identities</text><text class="s" x="532" y="101">split / merge / risk</text>
+<path class="a" d="M708 60 H755"/>
+<rect class="box" x="765" y="0" width="190" height="120" rx="18"/><text class="t" x="787" y="47">Allocate</text><text class="s" x="787" y="77">fixed verified budget</text><text class="s" x="787" y="101">frontier-aware priority</text>
+<path class="a" d="M963 60 H1010"/>
+<rect class="box" x="1020" y="0" width="190" height="120" rx="18"/><text class="t" x="1042" y="47">Verify</text><text class="s" x="1042" y="77">counterfactual tasks</text><text class="s" x="1042" y="101">leakage + safety gates</text>
+<path class="a" d="M1115 130 V200 H860 V245"/>
+<rect class="box" x="765" y="255" width="190" height="120" rx="18"/><text class="t" x="787" y="302">Train</text><text class="s" x="787" y="332">SFT / preference / RL</text><text class="s" x="787" y="356">provider-independent</text>
+<path class="a" d="M765 315 H600"/>
+<rect class="box" x="400" y="255" width="190" height="120" rx="18"/><text class="t" x="422" y="302">Re-evaluate</text><text class="s" x="422" y="332">same held-out suite</text><text class="s" x="422" y="356">new frontier state</text>
+<path class="a" d="M400 315 H160 V130"/>
+</g><text class="s" x="55" y="478">The hypothesis is falsifiable: if frontier transitions do not improve fixed-budget allocation on real agents, SORELIA should not claim an advantage.</text></svg>

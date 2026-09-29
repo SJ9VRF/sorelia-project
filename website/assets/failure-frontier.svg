@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560">
+<defs><style>.bg{fill:#0b0e12}.axis{stroke:#34404c;stroke-width:2}.before{fill:#657384}.after{fill:#e8c977}.muted{font:400 17px Inter,Arial,sans-serif;fill:#9ca7b2}.label{font:700 21px Inter,Arial,sans-serif;fill:#f7f4ee}.big{font:900 46px Inter,Arial,sans-serif;fill:#f7f4ee}.cap{font:800 15px Inter,Arial,sans-serif;fill:#e8c977;letter-spacing:2px}.good{fill:#8fdbad}.bad{fill:#ff9c96}</style></defs><rect class="bg" width="1400" height="560" rx="28"/>
+<text class="cap" x="60" y="58">MOVING FAILURE FRONTIER · RETAINED LOCAL ENGINEERING SMOKE</text>
+<text class="label" x="60" y="112">Aggregate task success stayed at 90%, but the failure frontier moved.</text>
+<line class="axis" x1="60" y1="390" x2="810" y2="390"/><text class="muted" x="60" y="424">risk mass</text>
+<rect class="before" x="120" y="160" width="230" height="230" rx="16"/><text class="label" x="162" y="455">Before update</text><text class="big" x="162" y="275">0.944</text>
+<rect class="after" x="470" y="125" width="230" height="265" rx="16"/><text class="label" x="512" y="455">After update</text><text class="big" x="512" y="260" fill="#111">1.090</text>
+<text class="label" x="875" y="170">Risk removed</text><text class="big good" x="875" y="225">0.449</text>
+<text class="label" x="875" y="295">Risk introduced</text><text class="big bad" x="875" y="350">0.595</text>
+<text class="label" x="875" y="420">Displacement ratio</text><text class="big" x="875" y="475">1.33×</text>
+<text class="muted" x="60" y="515">Engineering smoke only. This figure demonstrates the measurement object, not frontier-model superiority.</text></svg>
