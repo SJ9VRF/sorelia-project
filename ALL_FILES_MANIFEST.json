@@ -1,0 +1,1425 @@
+{
+  "file_count": 284,
+  "files": [
+    {
+      "path": "SORELIA-v1.7.0/.devcontainer/devcontainer.json",
+      "size_bytes": 272,
+      "sha256": "142c936f8515ad9a03677d9d5e574b707663599fe4f98011d4cbbe30a1136165"
+    },
+    {
+      "path": "SORELIA-v1.7.0/.dockerignore",
+      "size_bytes": 61,
+      "sha256": "61b548c1080983a40fd7691a9b293313e7211e5967ed44f537f1622a4e792938"
+    },
+    {
+      "path": "SORELIA-v1.7.0/.github/ISSUE_TEMPLATE/bug.yml",
+      "size_bytes": 473,
+      "sha256": "6334766ab9217ebc7b35c70b2575bdb95ddf175a9620aaa41753e9ef408649a8"
+    },
+    {
+      "path": "SORELIA-v1.7.0/.github/ISSUE_TEMPLATE/research.yml",
+      "size_bytes": 670,
+      "sha256": "6306ac3fe516daf8ee818724f0d4e6bec44b8f42b601b43f950b639118d78b5a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/.github/PULL_REQUEST_TEMPLATE.md",
+      "size_bytes": 399,
+      "sha256": "084fab4b561371fc318b54959921c265345c1f3b95042add631a98d64f5bfd3d"
+    },
+    {
+      "path": "SORELIA-v1.7.0/.github/workflows/browser-smoke.yml",
+      "size_bytes": 575,
+      "sha256": "d944651c52fc1896ac815cd4a226c1d179069508e4ef1b42df906eacf254d1a1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/.github/workflows/ci.yml",
+      "size_bytes": 467,
+      "sha256": "7031b1a3fc1518bf69d55fd97ae22c179065af56bb10ab0d7a5b41da181701c4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/.gitignore",
+      "size_bytes": 88,
+      "sha256": "3e872fa31adc12c9544e31f229b2ee9292315af5c5e7d857def6e6f9b317b9c8"
+    },
+    {
+      "path": "SORELIA-v1.7.0/CHANGELOG.md",
+      "size_bytes": 9559,
+      "sha256": "d6b4a6e93e15b662d5f76ea97344566966ee3aa22fcae28a32334e7fd2d8dd61"
+    },
+    {
+      "path": "SORELIA-v1.7.0/CITATION.cff",
+      "size_bytes": 317,
+      "sha256": "493c0e0addf0524d2e3946aeee3775abbebe6b406b6b72fbda700a8711812d6f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/CODE_OF_CONDUCT.md",
+      "size_bytes": 341,
+      "sha256": "ca252caa1124ffdeee28e4ec6c52e582e4099b1e4516a1a487d94442d0bcf50f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/CONTRIBUTING.md",
+      "size_bytes": 1369,
+      "sha256": "9bbe4c37fd37168416b7e3aa246bdbd8611be3b0178311ea93e61ca291651eb7"
+    },
+    {
+      "path": "SORELIA-v1.7.0/Dockerfile",
+      "size_bytes": 140,
+      "sha256": "cc131cb5b13aeb268d254a51f51dc2ec30f6a4b21b39d315dbcb2404bf7b12be"
+    },
+    {
+      "path": "SORELIA-v1.7.0/LICENSE",
+      "size_bytes": 671,
+      "sha256": "99c85915762bbf080cb759d095ad72d63e1bcdc57a6bc146c4202b403ef5ebdf"
+    },
+    {
+      "path": "SORELIA-v1.7.0/MANIFEST.sha256",
+      "size_bytes": 37000,
+      "sha256": "a2abb1b3f6bf6fdbf296a37bd5fd351fbfd5c78546fdc5938137403e32df1889"
+    },
+    {
+      "path": "SORELIA-v1.7.0/Makefile",
+      "size_bytes": 1121,
+      "sha256": "a77c9db850c3059136fda2f244fe2ad54ac3c16a7c3b47e1f5d405e8235e936a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/README.md",
+      "size_bytes": 16395,
+      "sha256": "49444605d216728d3feefd6402025a1487f4ae59b4d817c5b55708f7be64487d"
+    },
+    {
+      "path": "SORELIA-v1.7.0/SECURITY.md",
+      "size_bytes": 1036,
+      "sha256": "887640fe79732e97be35cdeb4469b2fbfc04cd30fe68bbfdb027deca8db96ea4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/SUBMISSION_INDEX.md",
+      "size_bytes": 2331,
+      "sha256": "48c49b02878a8566ec96b1dac702835ab09f786c5ae5a66c5532dd172d0813e0"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/README.md",
+      "size_bytes": 526,
+      "sha256": "f54840ac5c628bf6d0c2d3f1d125c206aec8657f06a76bb15ce81e93847d6a51"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/V090_RELEASE_REPORT.json",
+      "size_bytes": 5703,
+      "sha256": "a0004f5ae5695bfb34cc71ca32bb5f2891dfe07248bb457fb748c662bf7c31a2"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/V100_RELEASE_REPORT.json",
+      "size_bytes": 198192,
+      "sha256": "282c3d734c2a478ffe1846363a493aff196e3658be053db2c4ffc876379de0ba"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/V110_RELEASE_REPORT.json",
+      "size_bytes": 3941,
+      "sha256": "d6915bd06448d06135cd0ea96f959728bd3b189f41cfad2f4b1370309ce9bff3"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/V120_RELEASE_REPORT.json",
+      "size_bytes": 896,
+      "sha256": "2096afd0ae20312c07000d15cbcd05c11482504416c04029ab55fb2af74e209a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/V130_RELEASE_REPORT.json",
+      "size_bytes": 1429,
+      "sha256": "69540b461c2e18a23c0d1dabb403d2355c09767ac1f4a3ed6526a73209786bc2"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/V140_RELEASE_REPORT.json",
+      "size_bytes": 1390,
+      "sha256": "75de9dc8c6b61feac4debc1eeb47021e803fd0a6f329f2d452d916815c0aa2f8"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/V150_RELEASE_REPORT.json",
+      "size_bytes": 1287,
+      "sha256": "3611359e929e15211af5d0ad7d305b63699ce8cf7f39459540e0dc28a20e28dd"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/V160_RELEASE_REPORT.json",
+      "size_bytes": 849,
+      "sha256": "128765fbe8151cf3d386f9ba482831fac8478ad76df07d534a076dc928cfb3ca"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/V170_RELEASE_REPORT.json",
+      "size_bytes": 683,
+      "sha256": "f0890e9ca3db19efc48441a8141992da8443eb08a855eebe02c77084d0aa4c44"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/ablations/v100_ablations.json",
+      "size_bytes": 34153,
+      "sha256": "bc5508ef872a747fb470fbfe4b2e14b2bc536c329d40785b8011a91eba7a2a47"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/browser_smoke.json",
+      "size_bytes": 182331,
+      "sha256": "cc3dc5004ab78bf8acc5ecd6c6e9ed32c3d87a6ea23121953cc5465e3b6af7ef"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/browser_smoke_stdout.txt",
+      "size_bytes": 750,
+      "sha256": "4090cf6b96122e3e7ccbbf2f75a8361d532fa04e1007a3344259994341bc8826"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/configs/release_smoke.yaml",
+      "size_bytes": 264,
+      "sha256": "3465219b697318f3973cae7b15edaeb770a70757a9987496c30513077642b383"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/configs/v090_release.yaml",
+      "size_bytes": 261,
+      "sha256": "118e5ebd398118a2158bfd94b1b1ad1915cb9a21734da2d9293aeb4250e75597"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/eval_runs/browser_smoke.json",
+      "size_bytes": 182331,
+      "sha256": "cc3dc5004ab78bf8acc5ecd6c6e9ed32c3d87a6ea23121953cc5465e3b6af7ef"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/eval_runs/v070_release_multiseed.json",
+      "size_bytes": 76548,
+      "sha256": "d8f81d7a647b81d8ef42bd174062f62c8870c416b4e5a354b5b78ebda7ae2ab9"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/eval_runs/v100_compare.json",
+      "size_bytes": 29448,
+      "sha256": "e9f168214a9b53c13e7c3adae6790430a9addb17841c8fdf4d99cf3f375acb66"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/experiment_logs/exp-001-local-closed-loop-smoke.md",
+      "size_bytes": 731,
+      "sha256": "95e3980bdab85cb301deedeaacfb279f4ddedefd5ec7b131696f09c6b3594756"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/experiment_logs/exp-002-chromium-browser-fixture.md",
+      "size_bytes": 754,
+      "sha256": "d175205c4622dc6e92641d767bb8849c6b45ba68d3e80f9dbb0c5f857cc61758"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/experiment_logs/exp-003-moving-failure-frontier-smoke.md",
+      "size_bytes": 645,
+      "sha256": "9ad1a7c419006a43bbabbb0f17227c52b41d38a7a398cd521f941d138e9ea33d"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/experiment_logs/exp-004-fixed-budget-curriculum-comparison.md",
+      "size_bytes": 860,
+      "sha256": "bf0a7b8ba1d3faaee53eaf7528bbaa10c26d7501faaf048d626c42dd1eb65e01"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/experiment_logs/exp-005-repeated-trial---multiseed-inference.md",
+      "size_bytes": 650,
+      "sha256": "0992c6e7630f3ea5349389d7a63174f6168adb4204bb847872bcc76795bc7356"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/experiment_logs/exp-006-shifted-stress-split.md",
+      "size_bytes": 767,
+      "sha256": "a3bdab03d371715c3d516a293519704cda5897eab79b3c64e08f4f7b2f612c5e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/experiment_logs/exp-007-exploration-ablation.md",
+      "size_bytes": 641,
+      "sha256": "65bf6e6896f919abd88128c3d6f05dac1d6e1a351a47b0e44ec749d9f196570c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/experiment_logs/exp-008-semantic-negative-controls.md",
+      "size_bytes": 753,
+      "sha256": "8e3ad5566c9e59c1b56233dcc18fe7f20c19b708206600e3adb7c8d6ed61a0c0"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/experiment_logs/exp-009-matching-ambiguity-audit.md",
+      "size_bytes": 681,
+      "sha256": "711215a818c4541cbb4e07efeeb6d005a6bd9e80cebbba38b1876de3d7e133f0"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/failure_examples/browser-real-0001.json",
+      "size_bytes": 20486,
+      "sha256": "2bc57198de6f59f4a9d3d80201f11d4cc07349cd617813a8de41e20eb1e48d38"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/git_history/COMMIT_LOG.txt",
+      "size_bytes": 1172,
+      "sha256": "5d93af4dc9e3c3831b9ce46170d5d62251767a1f3a04f0e63b51858095bdfa9c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/git_history/sorelia-v1.6.0.bundle",
+      "size_bytes": 1000577,
+      "sha256": "06c7568abb1c6daddcc521c3b1fc49a0ad12f0a86c4993794805720b3fed4b21"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/git_history/sorelia-v1.7.0.bundle",
+      "size_bytes": 1016593,
+      "sha256": "29b5a755a78e9e3a069259a3029399ab3b431985a3d6833c5ff93ac6ecb964fd"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/plots/v080_curriculum_success.png",
+      "size_bytes": 86073,
+      "sha256": "0dcd8cc8631be933ac0a1b61b6a2d54d8c69e6b8458363c1dc2d20f8f8d9447c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/plots/v110_risk_displacement.png",
+      "size_bytes": 43361,
+      "sha256": "9b03ac6c31916f30f4d750354a502df4c1f89a02dd8de41fb3d38401f8523ea2"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/qualitative_cases/case-001-risk-displacement.md",
+      "size_bytes": 752,
+      "sha256": "e6b2d1a9568399689346ef968aedc7e1a738036a86d7ed6dba6905c3ab27f638"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/qualitative_cases/case-002-browser-state-tracking.md",
+      "size_bytes": 614,
+      "sha256": "900b55f71fdeb29ea07c9a703135284c795b9b6956168d70822e708eeef946e9"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/release_repro_ablations.json.manifest.json",
+      "size_bytes": 643,
+      "sha256": "b86434d56e321a0736a77deaa0c90998ed74d01e0cb9c737f5399d29e27073a8"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/release_repro_compare.json.manifest.json",
+      "size_bytes": 594,
+      "sha256": "0f9dc16ad5a4928db423df6adb5d61a5941ae65b62c2258fb549e6812bd4677a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v070_release_multiseed.json",
+      "size_bytes": 76548,
+      "sha256": "d8f81d7a647b81d8ef42bd174062f62c8870c416b4e5a354b5b78ebda7ae2ab9"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v070_release_multiseed.json.manifest.json",
+      "size_bytes": 614,
+      "sha256": "65c6f74943ae0bf7341b9afb30c0e355bd57910261b845f34c4fc04e699ca644"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v070_release_multiseed_stdout.txt",
+      "size_bytes": 3827,
+      "sha256": "debaabc42032f78625441dc4505de4b67af180444173b8a6d7fe0b878d4a5e29"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v090_audit.json",
+      "size_bytes": 67,
+      "sha256": "90cf58c06d7467e50068513629c8c65ac777bb34c62e8d4acad2166b7aece336"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_ablations.json",
+      "size_bytes": 34153,
+      "sha256": "bc5508ef872a747fb470fbfe4b2e14b2bc536c329d40785b8011a91eba7a2a47"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_ablations.json.manifest.json",
+      "size_bytes": 643,
+      "sha256": "3978e678a8e1753939c14dfefd7b9ca0892980974706033f50cbd353b1ab7f27"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_ablations_stdout.txt",
+      "size_bytes": 2178,
+      "sha256": "623e6c328c5fb0b9edfd5b85e481830277b945be2fd9b770398a8e9a90c44b6b"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_browser_smoke_stdout.txt",
+      "size_bytes": 751,
+      "sha256": "ca199536fb33d61bbf0cd5cbdce52261e9dd930e382b1e8f96bcc6003f2b51cd"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_compare.json",
+      "size_bytes": 29448,
+      "sha256": "e9f168214a9b53c13e7c3adae6790430a9addb17841c8fdf4d99cf3f375acb66"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_compare.json.manifest.json",
+      "size_bytes": 594,
+      "sha256": "7db58628e26b06798fec3a0fc5061f86f8ca98c7cf02ba6e6b8fbb0f510348bd"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_compare_stdout.txt",
+      "size_bytes": 29449,
+      "sha256": "04b7d1450fa18ab160f94b36e6d9149e6fd6dd53724b50797268369e5233a2ab"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/allocation_i1.json",
+      "size_bytes": 42,
+      "sha256": "ab5f0b36a7139e17070e8b2c211f38ec4b79d54ce03e6d4616db7a2a96b0e6b3"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/allocation_i2.json",
+      "size_bytes": 42,
+      "sha256": "65f82647932a0ba61ea1c2779095ae39a1a37419b1d46d238fbf1f4c7c90eebc"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/benchmark_manifest.json",
+      "size_bytes": 5866,
+      "sha256": "06b67351286523dbbd59cd4c1ba80cc1900ebc8cf30c93b23fe4df661eac4da1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/clusters_i1.json",
+      "size_bytes": 4812,
+      "sha256": "7f4bec93bf482459ea0cf7bbe652fada6310417111296ce5cd6c14378b341455"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/clusters_i2.json",
+      "size_bytes": 3431,
+      "sha256": "e5ecd5a4fca31beb6bbc39e4e325d083fcd12f51d87c6c693602dd09fa8441ac"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/corrections_i1.jsonl",
+      "size_bytes": 9003,
+      "sha256": "eb747b2d7696b2c26d28803439441008009be615c91db1c292994f1e9020798b"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/corrections_i2.jsonl",
+      "size_bytes": 1352,
+      "sha256": "af3a5678b60296c7b6ee4f62c040777196df25e82dc53a37d7af3634a48e8429"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/eval_v0.jsonl",
+      "size_bytes": 58966,
+      "sha256": "107ad1e5df04a1f6873cd73c777434914224151aded8788782916672fa03e0fa"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/eval_v1.jsonl",
+      "size_bytes": 36497,
+      "sha256": "eb7782e5ae7576bd8cb6fcfd3c3e180e35ab37fb2cae711471fad152f12a3c3c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/eval_v2.jsonl",
+      "size_bytes": 35166,
+      "sha256": "dbb58ad05920572ce0049c556d3caf9eb23b800200498b9e75efd82a635239eb"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/evidence_index.json",
+      "size_bytes": 3121,
+      "sha256": "0e02a9085dffc52928d8cfb90a0975a11924e5d417e6a58412ef365abef7e97e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/frontier_i1.json",
+      "size_bytes": 5496,
+      "sha256": "22cbdf97e7b397d50ba63b52eaa38518fb6b36165c8d7c39aebb541187a306ba"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/frontier_i2.json",
+      "size_bytes": 6857,
+      "sha256": "1f2a20b76d1791f1417831a9c39ee0abb1f96eafca442cd95fdfb8b4fa5633e6"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/generated_i1.jsonl",
+      "size_bytes": 6903,
+      "sha256": "9498a7440fa054feff3a529b5ac40dcf2245415fcbc80a6a353a62aa6fbba306"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/generated_i2.jsonl",
+      "size_bytes": 6887,
+      "sha256": "9f3c9fd2b95c14c1992645668845ba0b657efdb6c89ffc8dc520196c48710938"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/matching_annotation_packet_i1.jsonl",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/matching_annotation_packet_i2.jsonl",
+      "size_bytes": 532,
+      "sha256": "1662914f220720ccff9ce1ef598b536683f076c93d41b165cc7e525d7a684092"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/metrics.json",
+      "size_bytes": 3837,
+      "sha256": "1a8b652dc72db94ec86c8f89ed773f10ebb4d2f08c5bfa05ec2a3e9adfba4eb3"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/run_manifest.json",
+      "size_bytes": 498,
+      "sha256": "543d43217866a6b85ad8d5116a4b855ae07a1d26db67bfe9743e6f50621e581e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/train_rollouts_i1.jsonl",
+      "size_bytes": 65196,
+      "sha256": "b69075436c69798bddb7098026bcbd4221de8f8cb1d26225efbd259ac458dbb7"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke/train_rollouts_i2.jsonl",
+      "size_bytes": 38394,
+      "sha256": "f2f8961f3872ccbaf6c3caa18d0d7e891493b026c259b58786ef0e7d06b06475"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v100_smoke_stdout.txt",
+      "size_bytes": 3838,
+      "sha256": "070e6ab6daa86cdbb0782ce1e59c65749f82695a1b651994288e1ce39ccc5d47"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_browser_smoke_stdout.txt",
+      "size_bytes": 855,
+      "sha256": "6703bc1cd94da577efc55091e77e640307a8ff0abcec2eb852f495980cabd73e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/allocation_i1.json",
+      "size_bytes": 42,
+      "sha256": "ab5f0b36a7139e17070e8b2c211f38ec4b79d54ce03e6d4616db7a2a96b0e6b3"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/allocation_i2.json",
+      "size_bytes": 42,
+      "sha256": "65f82647932a0ba61ea1c2779095ae39a1a37419b1d46d238fbf1f4c7c90eebc"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/benchmark_manifest.json",
+      "size_bytes": 5866,
+      "sha256": "06b67351286523dbbd59cd4c1ba80cc1900ebc8cf30c93b23fe4df661eac4da1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/clusters_i1.json",
+      "size_bytes": 4812,
+      "sha256": "1c9a3bf8903dce720877ff414b621c25d28c2b4123fadf649d69d513a9e7567a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/clusters_i2.json",
+      "size_bytes": 3431,
+      "sha256": "a8ed954ca1b944defd89136a18fb5cbbc48abebe5bd0417f6d84e56298cd390f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/corrections_i1.jsonl",
+      "size_bytes": 9003,
+      "sha256": "9ddbfb72e1aca37258b26362a8291fa21b0e9971d9f5d6ffe8aef1ceb30cd382"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/corrections_i2.jsonl",
+      "size_bytes": 1352,
+      "sha256": "a84acede1171e5651f0e6aeaff8be2fde0da7876b615516dd8edd2fdef382875"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/eval_v0.jsonl",
+      "size_bytes": 59836,
+      "sha256": "8e1ea31fb82ce0c877a142860909cb4ee8d95232e01e1f1ce194cfe7f3fb4777"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/eval_v1.jsonl",
+      "size_bytes": 37407,
+      "sha256": "453e7c51f01d9bfe7aa1b97bb159f618506175b1ccfaee70746e39cbb0e42916"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/eval_v2.jsonl",
+      "size_bytes": 36053,
+      "sha256": "5486371163cd31f42945520f9b62996438f1b809c8f57ce006afe8f23df459d1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/evidence_index.json",
+      "size_bytes": 3121,
+      "sha256": "a8208ae04c863daf14b6fb06ea8163ea38c2f9aaf93774224925990b31b58b79"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/frontier_i1.json",
+      "size_bytes": 5496,
+      "sha256": "3931249dac8b018dfada1fbcf7d986f172a392b805853226871785d78425c20f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/frontier_i2.json",
+      "size_bytes": 6857,
+      "sha256": "f760f9f150db3dd3fc659ff767cfbbdc136af51c8e560e3723767235f2796d90"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/generated_i1.jsonl",
+      "size_bytes": 6903,
+      "sha256": "553c9320c904335c445f3075654234e24813382e9e650d84631d6b701162d575"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/generated_i2.jsonl",
+      "size_bytes": 6887,
+      "sha256": "fcefd39259ee6b27a7ff7f297b6680904270c41323fb25082389793650af9ae9"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/matching_annotation_packet_i1.jsonl",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/matching_annotation_packet_i2.jsonl",
+      "size_bytes": 532,
+      "sha256": "1662914f220720ccff9ce1ef598b536683f076c93d41b165cc7e525d7a684092"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/metrics.json",
+      "size_bytes": 4212,
+      "sha256": "f83ed6179f93dba47bf13361a9fb600a0ae899e498a1f95774056cbf5128553f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/run_manifest.json",
+      "size_bytes": 498,
+      "sha256": "205695eda84bdcf640dace573b2c67079daf659883deb8bd175284c3d972792b"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/train_rollouts_i1.jsonl",
+      "size_bytes": 66266,
+      "sha256": "730226a8f75a778c576715fd7b9121b1e6d7e2d99538a9ec354c26a27bf5807e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke/train_rollouts_i2.jsonl",
+      "size_bytes": 39432,
+      "sha256": "386c73031d3479e192bcdae2588c17087651b267b8561d9003cc9c98344acc9d"
+    },
+    {
+      "path": "SORELIA-v1.7.0/artifacts/v110_smoke_stdout.txt",
+      "size_bytes": 4213,
+      "sha256": "3d594a499b299f6c77f2c4c63c1dbc622741c528bd2912b2fcd63e2ef733f6a3"
+    },
+    {
+      "path": "SORELIA-v1.7.0/configs/paper_smoke.yaml",
+      "size_bytes": 270,
+      "sha256": "ad73e6ba46283e5e4c35dcc2a235881cffc1b54633cf836423fbbde0fbd3fcd5"
+    },
+    {
+      "path": "SORELIA-v1.7.0/configs/release_gate.yaml",
+      "size_bytes": 233,
+      "sha256": "17c89ce4d20a4c42cc08d30a4de810e218b4f19375e3eae926921b556444b7c7"
+    },
+    {
+      "path": "SORELIA-v1.7.0/configs/release_smoke.yaml",
+      "size_bytes": 264,
+      "sha256": "3465219b697318f3973cae7b15edaeb770a70757a9987496c30513077642b383"
+    },
+    {
+      "path": "SORELIA-v1.7.0/configs/smoke.yaml",
+      "size_bytes": 235,
+      "sha256": "899ae47d858f6c7960e9d901dc0350315a7c9ce84612bd67df51b94f823b13e4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/configs/v080_release.yaml",
+      "size_bytes": 261,
+      "sha256": "118e5ebd398118a2158bfd94b1b1ad1915cb9a21734da2d9293aeb4250e75597"
+    },
+    {
+      "path": "SORELIA-v1.7.0/configs/v090_release.yaml",
+      "size_bytes": 261,
+      "sha256": "118e5ebd398118a2158bfd94b1b1ad1915cb9a21734da2d9293aeb4250e75597"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/ARCHITECTURE.md",
+      "size_bytes": 1386,
+      "sha256": "9b8435cb30939f1b1bad113fc902555a76179d845808efe6c1deec646be0e03a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/BENCHMARK_CARD.md",
+      "size_bytes": 1451,
+      "sha256": "9cf8f377d610c9e5521b6a2b1a7128ea8bd3f1763588168eb74882e36e4769bb"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/BENCHMARK_IDENTITY.md",
+      "size_bytes": 690,
+      "sha256": "1fcc62561c036e8d48f5a22c072b13ff65043ba5180aeb29bf20254cd5994b73"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/BLOG_POST.md",
+      "size_bytes": 2755,
+      "sha256": "106278502d753a1e013cddf02676b2bb2ae5abee7f476a8175429c49fce80f5e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/CLAIMS_MATRIX.md",
+      "size_bytes": 957,
+      "sha256": "1e2720854f2a33250a6239ee7c0b3e8adb3448f2d368fa27208ce47f017a507f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/CLAIM_EVIDENCE_REGISTRY.json",
+      "size_bytes": 10579,
+      "sha256": "cc8097749594de7011996448a4bdf1a720ce3288aa37db2f8526126f716052c4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/CONTAMINATION_PROTOCOL.md",
+      "size_bytes": 1303,
+      "sha256": "ea295c43d74b70b124dee2430ba48602ca7359eed259af5af542e84062498a61"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/CURRENT_RESULTS.md",
+      "size_bytes": 2808,
+      "sha256": "0a7cf5ebe72f1cef88b8d8a3e0f73e9fc9346a9cfc3f3e2f3732353facf1a2c1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/DATA_CARD.md",
+      "size_bytes": 1363,
+      "sha256": "93ecad9ab033689a1d9238825ff421a91a60ed23cd0a35270cfb2114e8b5afa6"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/DECISION_LOG.md",
+      "size_bytes": 4005,
+      "sha256": "522cb01f41a93105c5d51f052b2cf7175bea396343922fc86724d21a62d657a3"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/DEMO_NARRATION.md",
+      "size_bytes": 1261,
+      "sha256": "e950ac0e81045206ac432850a1803ce8adcbf9cd59d36d8c2ef468daae659d72"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/DEMO_SCRIPT.md",
+      "size_bytes": 815,
+      "sha256": "ec9486774bbb4aee9dd2aa2a14b22d9478998675b8ca02b19773e848e868bd3b"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/ENVIRONMENT_CONTRACT.md",
+      "size_bytes": 1105,
+      "sha256": "545952fba1a3bdd5215e75e4bd8dcb1ac5f8c718f9548175f099293349dd68fc"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/EVIDENCE_LEDGER.json",
+      "size_bytes": 8968,
+      "sha256": "0b089b369e38d434bbaa8ce763d0421b7f53df730221a94ab4cca6cccc51f541"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/EVIDENCE_MAP.md",
+      "size_bytes": 1549,
+      "sha256": "4e7d3bac4d0bfe747924cd6a653a749944430306e42efa2078099c29da1ee094"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/EVIDENCE_TIERS.md",
+      "size_bytes": 1070,
+      "sha256": "304b12e21250308b3d4b5e8e1ca208f5b48f970d59420e9a4558e0c1783f785e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/EXECUTIVE_REVIEW.md",
+      "size_bytes": 2584,
+      "sha256": "ce5c996b91225cd4ef91755832faf4e617236c80f0639300ea392b40f1e56ed1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/EXPERIMENTS.md",
+      "size_bytes": 3445,
+      "sha256": "1b46fc80880bef7e5b12cd8efa731ce778391a70e1f9a91600afb126b0d40be6"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/EXPERIMENT_JOURNAL.md",
+      "size_bytes": 1351,
+      "sha256": "a718afa291bad08682b13aad017296879383514cb0d9ad9054889fb6df4a50f4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/EXPERIMENT_REGISTRY.md",
+      "size_bytes": 1720,
+      "sha256": "bda4b5994a71ca15c8c22e241b9de67b78c551663730d1a146e2fad673d885fc"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/FAILED_EXPERIMENTS.md",
+      "size_bytes": 2632,
+      "sha256": "d72a8d237389b69c37554de5b19ae42a392b68bdbba314553d07d3f947b9bd0a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/FAILURE_FRONTIER_SPEC.md",
+      "size_bytes": 2699,
+      "sha256": "4c8299a193f0d86d94a0aa9c2673702f45241b04414ecdab949bee09b9cdf2a4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/FIVE_MINUTE_TOUR.md",
+      "size_bytes": 2862,
+      "sha256": "b736adbd4e3009725adc8627afff6f3a7d38c4b93fadbd8cf1dbc2abc86cb380"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/GIT_HISTORY.md",
+      "size_bytes": 667,
+      "sha256": "d6f311414ac43107563b7a1aa92213f27831218ffba11c919b186692bdb0309e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/HIRING_MANAGER_VIEW.md",
+      "size_bytes": 5174,
+      "sha256": "7a15c0fea4403011cffed7a40b8e68e90a31ecb44358ef8e36f629f0402f23cf"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/HUMAN_CALIBRATION_PROTOCOL.md",
+      "size_bytes": 2026,
+      "sha256": "19a6dfb7228b3452ae425e0caf402a07f20b0aac2622fac6d06c858a2a7b3b04"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/IMPLEMENTATION_PLAN.md",
+      "size_bytes": 1537,
+      "sha256": "6edbbe7ba45bd99e7f19aae7c273c70cee2863f5219dafc586d1b866377f73ee"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/INTERVIEW_TALK_TRACKS.md",
+      "size_bytes": 3331,
+      "sha256": "09af2de0706263bfb1f1d6db47010d22e1f7fffe2d499620c0976637b5119473"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/MODEL_ADAPTER_CONTRACT.md",
+      "size_bytes": 1978,
+      "sha256": "2ec453d4b4ee014edc4f93c20e131983d0b52c70fd25df1a2f441851847a3f44"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/MODEL_CARD.md",
+      "size_bytes": 1359,
+      "sha256": "42f81d4b6c56409f67f90bbb7c599cac40c722fa61f1a741b0d4905bcccf0ca7"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/NEGATIVE_CONTROLS.md",
+      "size_bytes": 1133,
+      "sha256": "c01a947083e7d4c5cc408422114fe42802be50e3630cac3b1c13edaadfe7c181"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/NOVELTY_AUDIT.md",
+      "size_bytes": 4830,
+      "sha256": "f154c8382d16f13bbecdccaedbda48cc0283e2e03e8f8c5a437890808562858f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/OPENAI_ANTHROPIC_ALIGNMENT.md",
+      "size_bytes": 1934,
+      "sha256": "9bf6fbd8840e8eda0cb46ec260981d6fb64239df1509dee4496e6816b878c121"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/PAPER_READINESS.md",
+      "size_bytes": 1649,
+      "sha256": "a4ac242f5e2f36369dea98ae8d4efc2d8882828e563922d991430996c2b2dedd"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/PROJECT_CARD.md",
+      "size_bytes": 741,
+      "sha256": "674024ff53d0f3b32a284e9f58804559b78a0d2aaf019bccc5536abfad6b142b"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/PROVIDER_INTEGRATION.md",
+      "size_bytes": 1762,
+      "sha256": "3f310816bc8316f9f9a0ba238e7fbff590a81d2339dc36d0ce46caf0c4534005"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/PUBLIC_RELEASE_CHECKLIST.md",
+      "size_bytes": 898,
+      "sha256": "e7d9a77103f15e82d0880da8d2746105cadca7a10b9b234c89f7c536a0619581"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RAW_ARTIFACT_INDEX.md",
+      "size_bytes": 941,
+      "sha256": "a5a3cc0bc1a488b7861adde7549a57ab5a6908859aac74adf396a89cb25d5250"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RECRUITER_ONE_PAGER.md",
+      "size_bytes": 2024,
+      "sha256": "977c81f1c6601c90ba2b95b35a9699e98109c06ebaf9d55ca8f80d1203a97a06"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RELATED_WORK.md",
+      "size_bytes": 1464,
+      "sha256": "7c7e5a410fce53736c42a5ab03f9b216bd0f21d340e8a4c2c199c9043ba8fe5b"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RELEASE_CANDIDATE_CHECKLIST.md",
+      "size_bytes": 1015,
+      "sha256": "8921876ce81af08363d6b6e9e6aa0c69020302309f7f9d59fac9826e28c4a88a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RELEASE_STATUS.md",
+      "size_bytes": 6820,
+      "sha256": "fbe1a153b2f4135e69b9e19366eb413f24e87d16c5f4f4e0e902b6d6ffddac8e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/REPRODUCIBILITY.md",
+      "size_bytes": 611,
+      "sha256": "2a72a14e3d3197bab659d5f0c5612f5eebb3955f7c4f95e4b8055c649feb1f22"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RESEARCH_BRIEF.md",
+      "size_bytes": 1940,
+      "sha256": "e097e9b9fc7a5d35bcbe4eae88e19b5da4ffef918e03b3d7fa95fd95b29435c6"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RESEARCH_CONTRIBUTIONS.md",
+      "size_bytes": 1585,
+      "sha256": "b475342ff56c8f1b7d17e754b6a066d864739b5173b87a14aa48aab558df2208"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RESEARCH_THREADS.md",
+      "size_bytes": 3282,
+      "sha256": "dd6b2e1bbb6427895e60faf2b873ffe89e512e01dcc303a86a9fd98f889240c4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RESULTS_ENGINEERING_SMOKE.md",
+      "size_bytes": 1023,
+      "sha256": "f050dfbb2d4fca375b3c8b7cd984acf1a509b102d482b35e6dc61e7e91c5b3bf"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RESULTS_V050_SMOKE.md",
+      "size_bytes": 1563,
+      "sha256": "2ea7442b0318566486fe6e64ffb1ce15c76223ce0889c5b85f8f1332a66dea82"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RESULTS_V070_RELEASE_SMOKE.md",
+      "size_bytes": 1089,
+      "sha256": "ce35ec8bf3ea03e2b4eaa8ba9f196ae6d7ab8d7dedeee7d11656e6fef8bc2ed7"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RESULTS_V080_ROBUSTNESS.md",
+      "size_bytes": 2308,
+      "sha256": "37fd8df203c36c3b7e67a6e399ce59f32cf57932b282c5e85b5b8ce2d1fd0ba1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RESULTS_V090_INTEGRITY.md",
+      "size_bytes": 1549,
+      "sha256": "10c95cfd7628a3219fd3449aea71c0440afa127cad9a967331ed2962c11b844b"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/RESUME_BULLETS.md",
+      "size_bytes": 1444,
+      "sha256": "cf7e6ac9f8148e8a49f7617551ef962678aeb5e311b39190e22ccd9da7955d13"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/REVIEWER_CHECKLIST.md",
+      "size_bytes": 1582,
+      "sha256": "c4d5b577adaa8ccfe6ee8ee61980419679e5aff41e28cecedb1e5e5906d08f5d"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/REVIEWER_REPRODUCTION.md",
+      "size_bytes": 813,
+      "sha256": "513f0003de30d5600c0a968b354d81e33aeb2ec6c2988a6d95c7067ada76e30b"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/STATISTICAL_PROTOCOL.md",
+      "size_bytes": 2824,
+      "sha256": "ae27eb16efe6fde99e418c0af38f1df1da3a4bfd2ce9f252a92c756eb673ebe0"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/SYSTEM_CARD.md",
+      "size_bytes": 1420,
+      "sha256": "8aa3e83dbbcf58796d0d7ca812f019422341633356fd315a9a8d6072effe1575"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/TECHNICAL_REPORT.md",
+      "size_bytes": 3578,
+      "sha256": "fd93433e6fc3063560844a7f3cbd1968e418a81cd5202a156b4c8657c1d650b1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/TRACEABILITY_MATRIX.md",
+      "size_bytes": 3353,
+      "sha256": "7eb09772f71dafedddca7427c6f4256c37963547399d654429b3ba55ca0a3ed6"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/TRUTH_AUDIT.md",
+      "size_bytes": 1455,
+      "sha256": "00073069eef49e471cc2d4df74cabc49fe6387503f43d37ad9c280f2c409bd24"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/UNEXPECTED_FINDINGS.md",
+      "size_bytes": 1667,
+      "sha256": "c3212fba59949e47ac280dcac82abeaf048d763c710eafb8dde2bc20ebf8253e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/USAGE_ACCOUNTING.md",
+      "size_bytes": 588,
+      "sha256": "d4bf85f937822ccdcdcff9e4d7981352bf2a185bc8862a1b274d895d22c91ff6"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/V100_RELEASE_NOTE.md",
+      "size_bytes": 1070,
+      "sha256": "49e371069ac585bb37c925354548233b0f838641163fc73d4291cb392dc5e1e0"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/V110_RELEASE_NOTE.md",
+      "size_bytes": 1003,
+      "sha256": "d8b35b5b50a958dec81c1a524aa6514f882c8537f4bec1ef7ee37662437eeffc"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/V120_RELEASE_NOTE.md",
+      "size_bytes": 828,
+      "sha256": "475189ad9c39a82d27fc5cb036aae8e725d879619c7cfddbe9885faae36dea57"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/V130_RELEASE_NOTE.md",
+      "size_bytes": 787,
+      "sha256": "7a84a28e617e3e25929b6106d5bca2eecbdcb9fb375ac8bbac8af3c380c60926"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/V140_RELEASE_NOTE.md",
+      "size_bytes": 1118,
+      "sha256": "a158c571da148b88808ba93e6ede52abad9f9662c9a5245a2da2e4775d997344"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/V150_RELEASE_NOTE.md",
+      "size_bytes": 928,
+      "sha256": "e89fa305fca475e0553107792e9779d3df39d12e7d97e7a811ccbaecbd5fc23d"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/V160_RELEASE_NOTE.md",
+      "size_bytes": 679,
+      "sha256": "9b4ba1e621e38bf940e8a0da4388915dcf4174283e5a45b1ffb335bde77f1b4c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/docs/V170_RELEASE_NOTE.md",
+      "size_bytes": 696,
+      "sha256": "7cee86aff6eb708885ebfb2157c128c0d275fa333fa96c07d3c219e93be106f3"
+    },
+    {
+      "path": "SORELIA-v1.7.0/paper/architecture.png",
+      "size_bytes": 56035,
+      "sha256": "a7916814a8b582aa0fc1478902ad2a722fb4dad83d9ef6670f041d1331742773"
+    },
+    {
+      "path": "SORELIA-v1.7.0/paper/failure-frontier.png",
+      "size_bytes": 55788,
+      "sha256": "a6dc299a55608e6657df115cd8cd4c8c8f95de219a80886264fddb5566bce090"
+    },
+    {
+      "path": "SORELIA-v1.7.0/paper/main.pdf",
+      "size_bytes": 276775,
+      "sha256": "31a2e9bebf682bcefa6232d96b9254a06ebbac124e6bfb433b209173c3605a88"
+    },
+    {
+      "path": "SORELIA-v1.7.0/paper/main.tex",
+      "size_bytes": 19515,
+      "sha256": "0a27e31534becd86ccc7155db5965bce83314872b69c0eba5dd8c9b2d2b6990a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/pyproject.toml",
+      "size_bytes": 637,
+      "sha256": "f3160d967b19c089734df635e297a3b5872a2940db13e486bf838467579c0616"
+    },
+    {
+      "path": "SORELIA-v1.7.0/scripts/make_multiseed_report.py",
+      "size_bytes": 1934,
+      "sha256": "0c5bb04873e0ff7332e1ad29d3714d0058af95de9d0dc9057078f877393e9c03"
+    },
+    {
+      "path": "SORELIA-v1.7.0/scripts/make_smoke_report.py",
+      "size_bytes": 2023,
+      "sha256": "d40d0055e53391fd9927c90880f6e872d902dfb7ac05924ebf48257f9272935e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/scripts/rehearse_paper_protocol.sh",
+      "size_bytes": 664,
+      "sha256": "ac9556fa4d559f09565e52a233b12aed8db257634501220c665d036e7f055ed6"
+    },
+    {
+      "path": "SORELIA-v1.7.0/scripts/reproduce_release.sh",
+      "size_bytes": 2711,
+      "sha256": "f1b5c16d9d3ff46f2198c9b0eb291a66fa556e4bc5669d6eb1cc82058b1d9b54"
+    },
+    {
+      "path": "SORELIA-v1.7.0/scripts/reviewer_demo.sh",
+      "size_bytes": 1166,
+      "sha256": "51d1a834805328e2822c1149d567c516637a412b02dd9507617a09fc5eeeb59f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/scripts/run_browser_smoke.py",
+      "size_bytes": 1400,
+      "sha256": "0580535d7e310f1bf88d98bef63afbd0c0ac09aff39f7b272f29d2373fa899c0"
+    },
+    {
+      "path": "SORELIA-v1.7.0/scripts/run_multiseed.py",
+      "size_bytes": 395,
+      "sha256": "89ec5f38cc3fd73509a9ec3b3ec6aa831bd28f4bf418a2137e3607338d10096e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/scripts/validate_public_release.py",
+      "size_bytes": 2423,
+      "sha256": "3da580056f12153bc712262ad3ee536772ff622e56c612dd7b473f3fb3296dea"
+    },
+    {
+      "path": "SORELIA-v1.7.0/scripts/validate_traceability.py",
+      "size_bytes": 1145,
+      "sha256": "9502a3bb743c6fb13343cf08eefe93c73bd1a89786fcc0ebebef5dd318cd6d9f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/__init__.py",
+      "size_bytes": 56,
+      "sha256": "5490c65e2700b958efb6247978917e335c53b279f27d22207271af6faeec2d87"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/adapters/model_agent.py",
+      "size_bytes": 1976,
+      "sha256": "7603a8c602e57a34a2482ea9bba805d75bf6c2f825b5a9815857c700bd79a42b"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/adapters/playwright_env.py",
+      "size_bytes": 6138,
+      "sha256": "f75008ef8b38e0bd5dc73ff10f005f98a4c40b60505c01cfbee8519f3db38fca"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/adapters/provider_agents.py",
+      "size_bytes": 5299,
+      "sha256": "539803060d187c22a9e7fb5abc74ae1cdc6773a2cec810a65138ee5b5976b4b7"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/agents/policy.py",
+      "size_bytes": 2219,
+      "sha256": "8b8e54282836e0205eb3ba5342e83fec97fdcd10c225f30c1557d51f629a3d10"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/analysis/calibration.py",
+      "size_bytes": 3309,
+      "sha256": "d3977eb3f4b2c0981ac1b6f40a77c07cadb7da17f25045eddd7c3cd86c60579a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/analysis/contamination.py",
+      "size_bytes": 3191,
+      "sha256": "dbea946f42ea82069fba1c3e0f491a48377216b11d9ee1009e29dbf9b70e1fda"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/analysis/frontier.py",
+      "size_bytes": 10905,
+      "sha256": "ad9b5131959848d74a0b0e2f35e24ab823f9cd6f09147a42a33549c5027473fe"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/analysis/statistics.py",
+      "size_bytes": 3683,
+      "sha256": "a69f61aa6aab8ed7b1c4ff089f855e3f6618c7efaa42618f6aa6e6d1d82174e1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/audit.py",
+      "size_bytes": 2567,
+      "sha256": "2a3a032762991dabe80abdb53b66a946914216d9e3c6f44e2707208e7a75e1fd"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/benchmark_manifest.py",
+      "size_bytes": 1496,
+      "sha256": "8defd46b275aac9d8527bec77c02208caa58bd611d0dc3ddfd3aa4fc813d00ad"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/benchmarks/sandbox.py",
+      "size_bytes": 2670,
+      "sha256": "ea47b031621dd86c55f8772a372abaf7359308236616906da71cf9f8ef39d9b4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/benchmarks/tasks.py",
+      "size_bytes": 2107,
+      "sha256": "86ac4821452d539b085c9ba10aa7aa25deb0239f3e39847c7ce4646dee32477f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/cli.py",
+      "size_bytes": 3462,
+      "sha256": "cd02fea019be21b4ac8d9cee7dbf9892e0909a9713efcb00089b88f00d7ed36a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/clustering/failures.py",
+      "size_bytes": 3259,
+      "sha256": "174e1073ea67377b9c8d11454e2e0ee38799b745ea74b3729f87930776a82df7"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/curriculum/bandit.py",
+      "size_bytes": 1942,
+      "sha256": "9ed3551dc1196c2d8b2fcc6071c9b87a9e3f4e4ba654352bdcd422dce5c8727d"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/curriculum/baselines.py",
+      "size_bytes": 1772,
+      "sha256": "85d58d655c09ea3332c628bbdd62f7bdb27ee45999b9836cde24f7498729c5cc"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/curriculum/scheduler.py",
+      "size_bytes": 3245,
+      "sha256": "a06d8ce5bce18816ec3838ac4b200dd8772172b354a92788b19ad6c036eb4a4d"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/data/io.py",
+      "size_bytes": 655,
+      "sha256": "d7ae6a847b7cf294474e54f34afcf72adfd3244e1e03fc7499565f671b731417"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/doctor.py",
+      "size_bytes": 1098,
+      "sha256": "9c48bf166d455698792961a4bc7ffdf116c67e274f92b05bf8169e5f9d42500a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/evals/metrics.py",
+      "size_bytes": 2687,
+      "sha256": "18db4adb21c1ff239c6698d73475a0332b7b0e21c0f098c905198029b150b65e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/evidence.py",
+      "size_bytes": 1192,
+      "sha256": "7d349fb938b030e5e46b36cf65a70af396d008461bfb40dbc2bc9e371790094f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/experiments.py",
+      "size_bytes": 7495,
+      "sha256": "02586a48a8d24f6601e5048dd0104bb7590a843a976f6a691029748627b1cdf5"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/experiments_ablation.py",
+      "size_bytes": 2376,
+      "sha256": "27c335fbcfb41a2f23a1111f9a7d31102f5fe0af4b987108d72479d0c9d265b6"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/experiments_multiseed.py",
+      "size_bytes": 2986,
+      "sha256": "9dd19805466bcdfc75a3bd36454275acbbf7bf8ce808f6cb652761185a9331ae"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/features.py",
+      "size_bytes": 1137,
+      "sha256": "9eaf87057c092866019b31aed1f13e07d25fba44a3ff86922b33dd419974dc6c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/generation/generator.py",
+      "size_bytes": 1962,
+      "sha256": "e35bbb8e0c00f9d47edb10004713ce7d5e7928707b18f01c568511001da991a4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/generation/verify.py",
+      "size_bytes": 1617,
+      "sha256": "5ac85d6e5d95a127b90cd3db8e994e8aae652deef75d8647ffeff2f04be6ef99"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/infra/rollout.py",
+      "size_bytes": 5854,
+      "sha256": "083403696235f8e3402df84befe08eed47d5a55957427165b33f2a22668f2610"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/interfaces.py",
+      "size_bytes": 624,
+      "sha256": "35d936057eb798481e27ef7ad6a9239b0e07e92b56617bd647d081f02b54934c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/pipeline.py",
+      "size_bytes": 7401,
+      "sha256": "394062f856803999efed376476e83e10161df905b9928febd2244598a486d1a1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/run_manifest.py",
+      "size_bytes": 1721,
+      "sha256": "02a5f6f6b8400c9bf24a2ba3eb01360a91820eaaea2d8090a3fbf00d846058df"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/safety/risk.py",
+      "size_bytes": 848,
+      "sha256": "97659dbfeb241ca57746751add1c9fb1591ace760e94b5ee2219ea5b67a0a47c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/schema.py",
+      "size_bytes": 3609,
+      "sha256": "298b1b6df1ee4971876aaf56c64f1d57da1c00d4da5c88191e35311f38dd2e1f"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/training/dataset.py",
+      "size_bytes": 495,
+      "sha256": "36b2291439d82019d3c73dd885a4a458c1efa2402dc703ee7a9a36e10c34bf42"
+    },
+    {
+      "path": "SORELIA-v1.7.0/src/sorelia/training/preference.py",
+      "size_bytes": 1904,
+      "sha256": "01f65242d998e61d62556d2e0b76721686465c34f037f250ac55520d6a1d674c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_ablation_harness.py",
+      "size_bytes": 1124,
+      "sha256": "4e7b14e9cf1da59f0994fc017b4333ce100cb56a32cca2470109d53c952d0ef5"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_bandit.py",
+      "size_bytes": 264,
+      "sha256": "dbd56e418ef88f358c35f6e72b6bbd71d0422415ae2fdc204b2a9936c8110bb3"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_benchmark_manifest.py",
+      "size_bytes": 503,
+      "sha256": "4d314a614fd5385d8e155c7fc901f5f9d511aef97507df5389667b6ba4b6b1d1"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_clustering.py",
+      "size_bytes": 588,
+      "sha256": "c320661ae589648af9a114bc503033ed7a5b136fc6ab25a02bb734a8b1afe456"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_compare_contract.py",
+      "size_bytes": 811,
+      "sha256": "2921f04f133cb6e93495972d116c47f8f612e4a20c9db091f36f08285913f0dd"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_contamination.py",
+      "size_bytes": 751,
+      "sha256": "beb20762e41521bddeb997cc501951e705e8291fda404998ddc2afe04937bc2e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_doctor.py",
+      "size_bytes": 165,
+      "sha256": "b64f50fb8d884be59abeb7eed70d0e80698203bdf5bce8425583f5c3cf57d2a5"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_evidence_layer.py",
+      "size_bytes": 2360,
+      "sha256": "d0e597b7743f31e0400f78010f8789d7d6668d3de9832e0d14caf3aee856833a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_frontier.py",
+      "size_bytes": 878,
+      "sha256": "5ba51f3a3a3817849be5cb551ce4b35f348049844336a720460578c5a36b53ae"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_frontier_matching.py",
+      "size_bytes": 1211,
+      "sha256": "d5059d60da5654c387c9bba05c6d61a3d41b2068cfd22ee27d939aa2d96f3cc8"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_frontier_optimal_matching.py",
+      "size_bytes": 747,
+      "sha256": "052b810b290e704a07081f1fccfbd55d481709ed6db95d6e63905c2b41e21467"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_generation.py",
+      "size_bytes": 244,
+      "sha256": "f7671af7a69402d5982197ed0bb0a747887ed79239a944e40c91319b48596819"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_human_calibration_protocol.py",
+      "size_bytes": 813,
+      "sha256": "31e846b257b55f1149c714396a887dc648154c7f55975fbaf0e253aa1f3270cf"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_matching_calibration.py",
+      "size_bytes": 818,
+      "sha256": "e187b70e185e5bdf2da64773518c782d4b77dc2a3a5b44b6140c9c0de7e27f21"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_metrics_usage_unknown.py",
+      "size_bytes": 1190,
+      "sha256": "b31a3bd53b4d880ffd81b180b487148e11ffb51c75f6d600e669d3305a3af8fd"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_model_adapter_contract.py",
+      "size_bytes": 773,
+      "sha256": "99da084860234080837bb2840187825ab7b5b156191c183e190c6258df2ce18a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_negative_controls.py",
+      "size_bytes": 843,
+      "sha256": "da2937fdc99784c688a139e5454c634ada6c53228aebbb6687a7d043d7ba02d4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_pipeline.py",
+      "size_bytes": 320,
+      "sha256": "d3b2f324fc63a1d7a032e92f66e91e40aee08774c4c656be73d93b602190ee55"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_playwright_env.py",
+      "size_bytes": 977,
+      "sha256": "72e97c7674459a65f25fb155f2079b9c9d95648b36d690bbc22759bba94110ad"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_priority_baseline.py",
+      "size_bytes": 632,
+      "sha256": "b707bc043d1eca665ccde8847ecaff5886a6b9732d85148b7172df29b89f28d7"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_project_page.py",
+      "size_bytes": 2883,
+      "sha256": "f7b0967c3e65f45010e191947a12ecee4acb1e3d67cdb1fe5651b4c815b44306"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_provenance.py",
+      "size_bytes": 699,
+      "sha256": "1f7d76c29e162c9280cb30ec15ad800e114c2fad069d13c30091a5295b9f9a4b"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_provider_agents.py",
+      "size_bytes": 1471,
+      "sha256": "86d2a8f8a3e5660c98b741384496e35b37f9770dbf42dd10c06f11949c696f62"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_public_release_validator.py",
+      "size_bytes": 317,
+      "sha256": "22ccaa5e7dafcac2924313d34523b8c341b58946b44f7450a65ee3fc99443faf"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_public_repo_contract.py",
+      "size_bytes": 1430,
+      "sha256": "26a5eb3058b4e9d4aa62672c56b947b05f7d74c778b2f8e4a31e980b063ba1c0"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_release_audit.py",
+      "size_bytes": 233,
+      "sha256": "faacb662fa00d1ed7a75e9149b9378230340fd2c7bb486b953cb38b9578f0f08"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_repeated_trials.py",
+      "size_bytes": 423,
+      "sha256": "3d6fe2ecdaad8adb947fb90517fd7282bf6fbde847c3b25dfaa1d8a777ffb213"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_rollout.py",
+      "size_bytes": 512,
+      "sha256": "560075808d83aeaed44bd23226710ca8d1c530992b302b477b3ce43bbfb3f513"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_rollout_cleanup.py",
+      "size_bytes": 704,
+      "sha256": "7ee50c927cddcfde19a14783da2a262b79e024bd3baddea01f47c015ed86915c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_shifted_eval.py",
+      "size_bytes": 455,
+      "sha256": "591d086e1f4e6ca847fa35bbbf6f9220155a21359640a237846b449da4da3b35"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_statistics.py",
+      "size_bytes": 325,
+      "sha256": "b33b66fe1debd74ea996532eb4056e5dbfc8dcdd3f8f22813a0e665acecdb79a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_statistics_paired.py",
+      "size_bytes": 373,
+      "sha256": "5080190aab69659074c2990f1ffbacf00e25c791c081cefab7c02dc796ec1be2"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_traceability_layer.py",
+      "size_bytes": 1206,
+      "sha256": "5c45aa5fee53b76c6f1fbf1dc58947e3cfa96d9dd278f9aa1231adfa3703dfab"
+    },
+    {
+      "path": "SORELIA-v1.7.0/tests/test_usage_accounting.py",
+      "size_bytes": 1230,
+      "sha256": "0f9a56c54057995eacef3e6b672c6534a76cd48c67c49e89076dd4100eeec0c0"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/assets/architecture.png",
+      "size_bytes": 56035,
+      "sha256": "a7916814a8b582aa0fc1478902ad2a722fb4dad83d9ef6670f041d1331742773"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/assets/architecture.svg",
+      "size_bytes": 2787,
+      "sha256": "9eb8a55421c6ca02116158f3dc79adf91d45590a32a99fb2110d30c88734fcac"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/assets/failure-frontier.png",
+      "size_bytes": 55788,
+      "sha256": "a6dc299a55608e6657df115cd8cd4c8c8f95de219a80886264fddb5566bce090"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/assets/failure-frontier.svg",
+      "size_bytes": 1698,
+      "sha256": "d5abd7d976b7a11c04bc8374049bde5e61ad0da47dd114a25d4aab8ebb3e57a9"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/assets/project-card.png",
+      "size_bytes": 42441,
+      "sha256": "25c7c6efabf3789dd7ffea902f27e606457a48ee76b9984cf2fde275a042b948"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/assets/project-card.svg",
+      "size_bytes": 1037,
+      "sha256": "65c9eec041071879c0682ce759f5751e77f5e6e082ba506de6adbd9bb915187c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/assets/sorelia-demo.mp4",
+      "size_bytes": 258216,
+      "sha256": "b1652c806ac278c215abb0c510bda95950bc129c9b7404a34caf98a9d4378d11"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/demo.html",
+      "size_bytes": 5293,
+      "sha256": "c9594ff2ab32fe50c8c2b50ace02746690e037adbed404d62808c6aa058016f3"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/evidence.html",
+      "size_bytes": 9045,
+      "sha256": "b0e843c55026eb022648298ecba58ed2e06298132f422e72d8f7f6328a350766"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/index.html",
+      "size_bytes": 26484,
+      "sha256": "96d1b09513e0b7e57234cb74ff4fa6344ed279b1865c5f06fb847447802bd1b2"
+    },
+    {
+      "path": "SORELIA-v1.7.0/website/traceability.html",
+      "size_bytes": 2836,
+      "sha256": "b13abed77e550f0ac501c9ccbce9e944e2425d767af94e3e0bca74620512b435"
+    },
+    {
+      "path": "SORELIA-v1.7.0-RELEASE-REPORT.json",
+      "size_bytes": 683,
+      "sha256": "f0890e9ca3db19efc48441a8141992da8443eb08a855eebe02c77084d0aa4c44"
+    },
+    {
+      "path": "SORELIA-v1.7.0.git.bundle",
+      "size_bytes": 1016593,
+      "sha256": "29b5a755a78e9e3a069259a3029399ab3b431985a3d6833c5ff93ac6ecb964fd"
+    }
+  ]
+}
