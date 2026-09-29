@@ -1,0 +1,286 @@
+{
+  "annotated_after": {
+    "0": {
+      "centroid": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.7,
+        0.4,
+        0.639,
+        0.3181818181818182
+      ],
+      "difficulty": 0.639,
+      "failure_ids": [
+        "e80c8a18-164a-4ec8-9782-6b1434b8ac69:0",
+        "e80c8a18-164a-4ec8-9782-6b1434b8ac69:1",
+        "e80c8a18-164a-4ec8-9782-6b1434b8ac69:2",
+        "e80c8a18-164a-4ec8-9782-6b1434b8ac69:3"
+      ],
+      "failure_type": "recovery",
+      "family": "documents",
+      "family_entropy": -0.0,
+      "recoverability": 0.4,
+      "risk": 0.33,
+      "severity": 0.7,
+      "size": 4,
+      "stable_id": "m0_2",
+      "step_fraction": 0.3181818181818182,
+      "type_entropy": -0.0
+    },
+    "1": {
+      "centroid": [
+        0.0,
+        0.0,
+        0.0,
+        0.16666666666666666,
+        0.0,
+        0.8333333333333334,
+        0.16666666666666666,
+        0.0,
+        0.8333333333333334,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5333333333333333,
+        0.6833333333333332,
+        0.7698333333333333,
+        0.26666666666666666
+      ],
+      "difficulty": 0.7698333333333333,
+      "failure_ids": [
+        "93d4a204-bc1c-4d03-a000-1488d7a677ef:0",
+        "b0a72b08-2eb2-4048-8271-691b7026092c:0",
+        "be93aea6-b50b-4fc1-936a-c4fde2cb9b44:0",
+        "be93aea6-b50b-4fc1-936a-c4fde2cb9b44:1",
+        "be93aea6-b50b-4fc1-936a-c4fde2cb9b44:2",
+        "be93aea6-b50b-4fc1-936a-c4fde2cb9b44:3"
+      ],
+      "failure_type": "planning",
+      "family": "multi_app",
+      "family_entropy": 0.6500224216483541,
+      "recoverability": 0.6833333333333332,
+      "risk": 0.31645833333333334,
+      "severity": 0.5333333333333333,
+      "size": 6,
+      "stable_id": "m2_1",
+      "step_fraction": 0.26666666666666666,
+      "type_entropy": 0.6500224216483541
+    },
+    "2": {
+      "centroid": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.6,
+        0.6999999999999998,
+        0.652,
+        0.2222222222222222
+      ],
+      "difficulty": 0.652,
+      "failure_ids": [
+        "aae2ea40-e923-4a65-9dba-2e55ced10c37:0",
+        "aae2ea40-e923-4a65-9dba-2e55ced10c37:1",
+        "aae2ea40-e923-4a65-9dba-2e55ced10c37:2"
+      ],
+      "failure_type": "state_tracking",
+      "family": "spreadsheet",
+      "family_entropy": -0.0,
+      "recoverability": 0.6999999999999998,
+      "risk": 0.16500000000000004,
+      "severity": 0.6,
+      "size": 3,
+      "stable_id": "m0_0",
+      "step_fraction": 0.2222222222222222,
+      "type_entropy": -0.0
+    },
+    "3": {
+      "centroid": [
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.0,
+        0.6666666666666666,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.0,
+        0.6666666666666666,
+        0.85,
+        0.39999999999999997,
+        0.7793333333333333,
+        0.34722222222222215
+      ],
+      "difficulty": 0.7793333333333333,
+      "failure_ids": [
+        "13dcc392-8776-42b0-8d10-8803e13e08f9:0",
+        "7067493d-1290-43f4-a6a9-216cd556cb0b:0",
+        "215db4bf-a99a-45c4-8187-293b5e974add:0"
+      ],
+      "failure_type": "safety",
+      "family": "files",
+      "family_entropy": 0.9182958340544896,
+      "recoverability": 0.39999999999999997,
+      "risk": 0.27843750000000006,
+      "severity": 0.85,
+      "size": 3,
+      "stable_id": "m2_3",
+      "step_fraction": 0.34722222222222215,
+      "type_entropy": 0.9182958340544896
+    }
+  },
+  "matching_calibration": {
+    "ambiguous_matches": 1,
+    "ambiguous_rate": 0.5,
+    "matched": 2,
+    "mean_margin": 0.27362660925497373,
+    "mean_similarity": 0.9160740705387072
+  },
+  "mechanisms": [
+    {
+      "after_cluster": 2,
+      "before_cluster": 0,
+      "failure_type": "state_tracking",
+      "family": "spreadsheet",
+      "match_margin": 0.0337527206028706,
+      "risk_after": 0.16500000000000004,
+      "risk_before": 0.27351823708206685,
+      "risk_delta": -0.10851823708206682,
+      "similarity": 0.8321481410774144,
+      "stable_id": "m0_0",
+      "status": "contracting"
+    },
+    {
+      "after_cluster": 0,
+      "before_cluster": 2,
+      "failure_type": "recovery",
+      "family": "documents",
+      "match_margin": 0.5135004979070769,
+      "risk_after": 0.33,
+      "risk_before": 0.42680851063829783,
+      "risk_delta": -0.09680851063829782,
+      "similarity": 1.0,
+      "stable_id": "m0_2",
+      "status": "contracting"
+    },
+    {
+      "after_cluster": null,
+      "before_cluster": 1,
+      "failure_type": "planning",
+      "family": "email",
+      "risk_after": 0.0,
+      "risk_before": 0.17751063829787234,
+      "risk_delta": -0.17751063829787234,
+      "similarity": 0.0,
+      "stable_id": "m0_1",
+      "status": "extinct"
+    },
+    {
+      "after_cluster": null,
+      "before_cluster": 3,
+      "failure_type": "grounding",
+      "family": "multi_app",
+      "risk_after": 0.0,
+      "risk_before": 0.06569148936170213,
+      "risk_delta": -0.06569148936170213,
+      "similarity": 0.0,
+      "stable_id": "m0_3",
+      "status": "extinct"
+    },
+    {
+      "after_cluster": 3,
+      "before_cluster": null,
+      "failure_type": "safety",
+      "family": "files",
+      "risk_after": 0.27843750000000006,
+      "risk_before": 0.0,
+      "risk_delta": 0.27843750000000006,
+      "similarity": 0.0,
+      "stable_id": "m2_3",
+      "status": "emergent"
+    },
+    {
+      "after_cluster": 1,
+      "before_cluster": null,
+      "failure_type": "planning",
+      "family": "multi_app",
+      "risk_after": 0.31645833333333334,
+      "risk_before": 0.0,
+      "risk_delta": 0.31645833333333334,
+      "similarity": 0.0,
+      "stable_id": "m2_1",
+      "status": "emergent"
+    }
+  ],
+  "net_risk_change": 0.14636695795339438,
+  "risk_after": 1.0898958333333335,
+  "risk_before": 0.9435288753799391,
+  "risk_displacement_ratio": 1.3263267227319757,
+  "risk_introduced": 0.5948958333333334,
+  "risk_removed": 0.44852887537993913,
+  "stable_id_by_cluster": {
+    "0": "m0_2",
+    "1": "m2_1",
+    "2": "m0_0",
+    "3": "m2_3"
+  },
+  "status_by_cluster": {
+    "0": "contracting",
+    "1": "emergent",
+    "2": "contracting",
+    "3": "emergent"
+  },
+  "summary": {
+    "contracting": 2,
+    "emergent": 2,
+    "extinct": 2
+  },
+  "topology_events": [
+    {
+      "event": "split",
+      "source_cluster": 0,
+      "stable_id": "m0_0",
+      "targets": [
+        2,
+        3
+      ]
+    },
+    {
+      "event": "merge",
+      "sources": [
+        1,
+        3
+      ],
+      "stable_id": "m2_1",
+      "target_cluster": 1
+    }
+  ]
+}

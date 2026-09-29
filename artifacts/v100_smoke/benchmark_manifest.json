@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "splits": {
+    "eval": {
+      "count": 10,
+      "sha256": "79871803853bb1203dc17c10ae8937db72c8109505f6c9324417e933d1337576",
+      "tasks": [
+        {
+          "failure_mode": "grounding",
+          "family": "browser",
+          "fingerprint": "9fb2992fb2d452b44e3002fc7c19a093515d726bb83e884cc4ae431b14db4e98",
+          "seed": 10160000,
+          "task_id": "eval-0000"
+        },
+        {
+          "failure_mode": "action",
+          "family": "documents",
+          "fingerprint": "d899a39a2febf995ca262a205cc6202738a6e45daffc14934bec57f690e5cdf1",
+          "seed": 10160001,
+          "task_id": "eval-0001"
+        },
+        {
+          "failure_mode": "recovery",
+          "family": "spreadsheet",
+          "fingerprint": "b5cf8caa3eaaa330935f4978f376ce52aaced15e441b70b57b2b7c8e818fb26f",
+          "seed": 10160002,
+          "task_id": "eval-0002"
+        },
+        {
+          "failure_mode": "state_tracking",
+          "family": "email",
+          "fingerprint": "834dc3d8f36b35c48cd13b37321651559c3c594634f265781299e641c1d703e3",
+          "seed": 10160003,
+          "task_id": "eval-0003"
+        },
+        {
+          "failure_mode": "memory",
+          "family": "files",
+          "fingerprint": "c55ef3639c0903ff0010d79964c8726272b80c792ca004788396029f11623dfb",
+          "seed": 10160004,
+          "task_id": "eval-0004"
+        },
+        {
+          "failure_mode": "safety",
+          "family": "multi_app",
+          "fingerprint": "f30aa532e6cb6cb410e0431d58d3a73ae00014f58d49a6c0762dcbb40d2dc642",
+          "seed": 10160005,
+          "task_id": "eval-0005"
+        },
+        {
+          "failure_mode": "planning",
+          "family": "browser",
+          "fingerprint": "656751dbc0cce7cece1f45aca2fbd8dff07d17898a7d135cd33c5d6f8774a029",
+          "seed": 10160006,
+          "task_id": "eval-0006"
+        },
+        {
+          "failure_mode": "verification",
+          "family": "documents",
+          "fingerprint": "e0c6e83d1d24e5a86b44d1c1279c433e257d28cf69043d1be90e5a8e5a3afe5d",
+          "seed": 10160007,
+          "task_id": "eval-0007"
+        },
+        {
+          "failure_mode": "grounding",
+          "family": "spreadsheet",
+          "fingerprint": "144456697d3c1fa5fe908c2b608c0b77ba87029dee69699dddf226c7831b4723",
+          "seed": 10160008,
+          "task_id": "eval-0008"
+        },
+        {
+          "failure_mode": "action",
+          "family": "email",
+          "fingerprint": "333b064692fe8d041484f8bd68ac9d3fb2507daa6eabd7f15af55a93a255e9ef",
+          "seed": 10160009,
+          "task_id": "eval-0009"
+        }
+      ]
+    },
+    "stress": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "tasks": []
+    },
+    "train": {
+      "count": 12,
+      "sha256": "031465b8f7c59b10d4e5aa4c24350ca596309b222ef13aad4b1c0bbd118b8828",
+      "tasks": [
+        {
+          "failure_mode": "state_tracking",
+          "family": "browser",
+          "fingerprint": "494df38879f5ce39b36211fe1fbf8d4bc228e26f3e79b72e72e173d0fc823732",
+          "seed": 170000,
+          "task_id": "train-0000"
+        },
+        {
+          "failure_mode": "memory",
+          "family": "documents",
+          "fingerprint": "97bda2bdba023892e8abe0e56efc8430c922ddeb0da797f886cbfabec1ced4d3",
+          "seed": 170001,
+          "task_id": "train-0001"
+        },
+        {
+          "failure_mode": "safety",
+          "family": "spreadsheet",
+          "fingerprint": "d0785182de66d5b8e3af34f2f382b9897561eb97868a9a73cf33a6ae78158067",
+          "seed": 170002,
+          "task_id": "train-0002"
+        },
+        {
+          "failure_mode": "planning",
+          "family": "email",
+          "fingerprint": "c308624a298a868349f291a15875f869f4133b26186e83021ca21173f2424422",
+          "seed": 170003,
+          "task_id": "train-0003"
+        },
+        {
+          "failure_mode": "verification",
+          "family": "files",
+          "fingerprint": "cbce7e501ce870eca908ba596504e0e72ad2d6b16dd7cc93029497dfead16241",
+          "seed": 170004,
+          "task_id": "train-0004"
+        },
+        {
+          "failure_mode": "grounding",
+          "family": "multi_app",
+          "fingerprint": "33da45dc0ae5dfa6a30a4d0d5b782c5384b46461f98923f9ad5c8a56723b0a77",
+          "seed": 170005,
+          "task_id": "train-0005"
+        },
+        {
+          "failure_mode": "action",
+          "family": "browser",
+          "fingerprint": "c48325f857f659baaeb44f1ac6df3ff8d60351617d9e514683c3630bdb30bb83",
+          "seed": 170006,
+          "task_id": "train-0006"
+        },
+        {
+          "failure_mode": "recovery",
+          "family": "documents",
+          "fingerprint": "2d98600955e3c0c6939a4a908fab0d5be5393cea1caa8aa716087b040e9c42a3",
+          "seed": 170007,
+          "task_id": "train-0007"
+        },
+        {
+          "failure_mode": "state_tracking",
+          "family": "spreadsheet",
+          "fingerprint": "09631b7df9f36e04f7f754b60f2f84356a747cfb603a57b4bdb92be1ccb53a4f",
+          "seed": 170008,
+          "task_id": "train-0008"
+        },
+        {
+          "failure_mode": "memory",
+          "family": "email",
+          "fingerprint": "c78185c34a40f185ef5073ed57eed01a91b8b34cb2850015fa4b1c18955a10a8",
+          "seed": 170009,
+          "task_id": "train-0009"
+        },
+        {
+          "failure_mode": "safety",
+          "family": "files",
+          "fingerprint": "e780d81403e83a0ca21ae1dda5256df04189b0bfbf3fccc4a30e57e480b5d717",
+          "seed": 170010,
+          "task_id": "train-0010"
+        },
+        {
+          "failure_mode": "planning",
+          "family": "multi_app",
+          "fingerprint": "cc34289da49f8755f4622af39ff8ca3b7d7c84eee2a3a09f45f696e0316ca005",
+          "seed": 170011,
+          "task_id": "train-0011"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "config_path": "configs/release_gate.yaml",
+  "config_sha256": "17c89ce4d20a4c42cc08d30a4de810e218b4f19375e3eae926921b556444b7c7",
+  "created_unix": 1790424282,
+  "executable": "/opt/pyvenv/bin/python",
+  "experiment": {
+    "variants": [
+      "full",
+      "no_exploration",
+      "random_cluster_assignment",
+      "shuffled_failure_labels",
+      "single_iteration",
+      "static_priority"
+    ]
+  },
+  "mode": "core-ablations",
+  "pid": 5891,
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "schema_version": 1,
+  "source_tree_sha256": "57349589d965d5cde77eefd37ae6e49e2a693b3a58869cdaf04ca6a267722231"
+}

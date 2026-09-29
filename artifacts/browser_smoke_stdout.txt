@@ -1,0 +1,27 @@
+{
+  "catastrophic_action_rate": 0.08333333333333333,
+  "cost_per_success": 0.00027714285714285715,
+  "error_propagation_depth": 1.0,
+  "failure_events": 54,
+  "failure_type_counts": {
+    "action": 4,
+    "grounding": 4,
+    "memory": 5,
+    "planning": 17,
+    "recovery": 5,
+    "safety": 5,
+    "state_tracking": 11,
+    "verification": 3
+  },
+  "failures_per_task": 4.5,
+  "first_failure_position": 0.1290764790764791,
+  "mean_cost": 0.00016166666666666665,
+  "mean_latency_ms": 400.9723379166606,
+  "mean_partial_success": 0.7430555555555555,
+  "mean_steps": 8.083333333333334,
+  "n_tasks": 12,
+  "recovery_attempts": 27,
+  "recovery_success_rate": 1.0,
+  "state_corruption_rate": 0.4166666666666667,
+  "task_success_rate": 0.5833333333333334
+}

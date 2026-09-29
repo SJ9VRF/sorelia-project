@@ -1,0 +1,31 @@
+{
+  "version": "1.6.0",
+  "author": "Aura Yavary",
+  "release_kind": "Evidence Layer release",
+  "tests": {
+    "passed": 54,
+    "failed": 0
+  },
+  "public_release_validator": {
+    "errors": 0
+  },
+  "evidence_layer": {
+    "journaled_experiment_families": 9,
+    "documented_failed_or_invalidated_assumptions": 6,
+    "structured_major_decisions": 8,
+    "raw_artifact_directories": [
+      "experiment_logs",
+      "eval_runs",
+      "failure_examples",
+      "plots",
+      "configs",
+      "qualitative_cases",
+      "ablations",
+      "git_history"
+    ],
+    "git_history_policy": "real history begins at imported v1.5.0 baseline; no backdating"
+  },
+  "truth_boundary": "engineering smoke / methodology evidence only; no frontier-model superiority claim",
+  "git_head": "cf877c558c0004641686c75f288b2cf800ab3e37",
+  "git_commit_count": 6
+}

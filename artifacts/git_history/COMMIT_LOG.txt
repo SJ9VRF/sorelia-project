@@ -1,0 +1,13 @@
+bae0942 2026-09-27 05:46:08 +0000 Aura Yavary Ship portable v1.7 Git history bundle
+d8097e5 2026-09-27 05:46:08 +0000 Aura Yavary Document v1.7 retained history boundary
+889f731 2026-09-27 05:45:01 +0000 Aura Yavary Require traceability artifacts in public release validator
+e4abbc7 2026-09-27 05:44:35 +0000 Aura Yavary Gate public releases on traceability validation
+b07969d 2026-09-27 05:44:35 +0000 Aura Yavary Add end-to-end research traceability graph
+2dada11 2026-09-27 05:44:35 +0000 Aura Yavary Bump release to v1.7.0
+7bf1ff6 2026-09-27 05:40:48 +0000 Aura Yavary Complete v1.6.0 release snapshot
+cf877c5 2026-09-27 00:48:06 +0000 Aura Yavary Add multiseed evidence table and evidence link checks
+acdfe4d 2026-09-27 00:46:53 +0000 Aura Yavary Document honest Git history boundary
+ed31c89 2026-09-27 00:46:34 +0000 Aura Yavary Enforce Evidence Layer in public release contract
+d996592 2026-09-27 00:45:08 +0000 Aura Yavary Add research process page and evidence visualizations
+e13024d 2026-09-27 00:44:01 +0000 Aura Yavary Add evidence layer journals and raw research artifacts
+9706602 2026-09-27 00:42:38 +0000 Aura Yavary Import v1.5.0 release candidate baseline

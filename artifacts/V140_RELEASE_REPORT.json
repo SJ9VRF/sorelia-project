@@ -1,0 +1,52 @@
+{
+  "release": "1.4.0",
+  "author": "Aura Yavary",
+  "title": "SORELIA: Tracking and Training the Moving Failure Frontier of Interactive Agents",
+  "test_suite": {
+    "passed": 47,
+    "failed": 0
+  },
+  "claim_evidence_audit": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "claims": 26
+  },
+  "reviewer_demo": {
+    "status": "passed",
+    "focused_tests_passed": 13,
+    "browser_smoke_executed": true,
+    "browser_task_success_rate": 0.5833333333333334,
+    "browser_failure_events": 54,
+    "usage_coverage": 0.0,
+    "cost_coverage": 0.0
+  },
+  "public_repo_hardening": [
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "CODE_OF_CONDUCT.md",
+    "docs/BENCHMARK_CARD.md",
+    "docs/SYSTEM_CARD.md",
+    "docs/EXPERIMENT_REGISTRY.md",
+    "docs/DECISION_LOG.md",
+    "docs/REVIEWER_REPRODUCTION.md",
+    "scripts/reviewer_demo.sh",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/ISSUE_TEMPLATE/bug.yml",
+    ".github/ISSUE_TEMPLATE/research.yml"
+  ],
+  "truth_boundary": {
+    "executed": "local deterministic + isolated Chromium engineering evidence",
+    "not_claimed": [
+      "frontier-model superiority",
+      "production reliability",
+      "completed human calibration",
+      "SOTA performance",
+      "paper-scale real-agent post-training gains"
+    ]
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  }
+}

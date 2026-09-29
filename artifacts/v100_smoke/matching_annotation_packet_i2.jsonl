@@ -1,0 +1,2 @@
+{"after_cluster": 2, "before_cluster": 0, "failure_type": "state_tracking", "family": "spreadsheet", "label": null, "model_ambiguous": true, "model_margin": 0.0337527206028706, "model_similarity": 0.8321481410774144, "notes": "", "pair_id": "match-00000", "stable_id": "m0_0"}
+{"after_cluster": 0, "before_cluster": 2, "failure_type": "recovery", "family": "documents", "label": null, "model_ambiguous": false, "model_margin": 0.5135004979070769, "model_similarity": 1.0, "notes": "", "pair_id": "match-00001", "stable_id": "m0_2"}

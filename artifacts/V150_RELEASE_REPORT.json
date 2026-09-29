@@ -1,0 +1,52 @@
+{
+  "project": "SORELIA",
+  "version": "1.5.0",
+  "author": "Aura Yavary",
+  "status": "release-candidate",
+  "source_tests": {
+    "passed": 48,
+    "failed": 0
+  },
+  "claim_evidence_audit": {
+    "ok": true,
+    "claims": 26,
+    "errors": 0,
+    "warnings": 0
+  },
+  "public_release_validator": {
+    "ok": true,
+    "errors": 0
+  },
+  "reviewer_demo": {
+    "ok": true,
+    "focused_tests_passed": 13,
+    "chromium_fixture_smoke": true
+  },
+  "browser_smoke": {
+    "n_tasks": 12,
+    "task_success_rate": 0.5833333333333334,
+    "failure_events": 54,
+    "recovery_attempts": 27,
+    "usage_coverage": 0.0,
+    "cost_coverage": 0.0
+  },
+  "visual_qa": {
+    "playwright_managed_homepage_screenshot": false,
+    "reason": "Playwright-managed Chromium binary unavailable in this runtime; structural/link/asset tests pass."
+  },
+  "scientific_claim_boundary": [
+    "no frontier-model superiority claim",
+    "no production reliability claim",
+    "no SOTA claim",
+    "human calibration not completed"
+  ],
+  "new_public_artifacts": [
+    "docs/CURRENT_RESULTS.md",
+    "docs/MODEL_CARD.md",
+    "docs/RELEASE_CANDIDATE_CHECKLIST.md",
+    "Dockerfile",
+    ".devcontainer/devcontainer.json",
+    "scripts/validate_public_release.py",
+    ".github/workflows/browser-smoke.yml"
+  ]
+}

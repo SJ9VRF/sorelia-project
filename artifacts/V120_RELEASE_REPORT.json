@@ -1,0 +1,28 @@
+{
+  "release": "1.2.0",
+  "author": "Aura Yavary",
+  "project": "SORELIA",
+  "checks": {
+    "tests": "39 passed",
+    "claim_evidence_audit": "pass",
+    "flagship_page_contract": "pass",
+    "local_artifact_links": "pass",
+    "interactive_demo_contract": "pass",
+    "visual_browser_render": "not executed: environment blocked page navigation"
+  },
+  "page": {
+    "required_sections": 14,
+    "hero_primary_signal": "1.33x risk displacement at unchanged 90% task success",
+    "evidence_tier": "local engineering smoke",
+    "video": "not released; disabled state shown",
+    "github": "not published; disabled state shown"
+  },
+  "truth_boundary": [
+    "No frontier-model superiority claim",
+    "No completed human calibration claim",
+    "No fabricated cost/token usage",
+    "No fake GitHub or video link"
+  ],
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+}

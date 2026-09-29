@@ -1,0 +1,177 @@
+{
+  "author": "Aura Yavary",
+  "claim_evidence_audit": {
+    "claims": 17,
+    "errors": [],
+    "ok": true,
+    "warnings": []
+  },
+  "contamination": {
+    "exact_eval_leakage_final": 0,
+    "near_eval_duplicate_pairs_final": 0
+  },
+  "fast_release_reproduction": "pass",
+  "human_calibration": {
+    "claim_status": "pending",
+    "independent_human_labels": "not performed",
+    "infrastructure": "implemented"
+  },
+  "limitations": [
+    "no frontier VLM/LLM post-training executed in this artifact environment",
+    "no paper-scale held-out real website/application-family study executed",
+    "no independent human annotation study completed",
+    "local synthetic negative controls can outperform full SORELIA; no superiority claim is supported"
+  ],
+  "paper": {
+    "pages": 5,
+    "path": "paper/main.pdf",
+    "render_verified": true,
+    "sha256": "086948189961d4d1dd1e16de7a36d17ad66ab5255b6660e81f8f19842e57f2e0"
+  },
+  "project": "SORELIA",
+  "release_status": "engineering-research-harness; paper-scale real-agent claims gated",
+  "runtime": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.13.5"
+  },
+  "source_compile": "pass",
+  "tests": {
+    "passed": 26,
+    "status": "pass"
+  },
+  "v090_ablations": {
+    "full": {
+      "catastrophic_action_rate": 0.041666666666666664,
+      "exact_eval_leakage": 0,
+      "experimental_control": "none",
+      "exploration_ratio": 0.2,
+      "failures_per_task": 1.0625,
+      "iterations": 2,
+      "mode": "sorelia",
+      "stress_failures_per_task": 0.9583333333333334,
+      "stress_task_success_rate": 0.9166666666666666,
+      "task_success_rate": 0.875
+    },
+    "no_exploration": {
+      "catastrophic_action_rate": 0.041666666666666664,
+      "exact_eval_leakage": 0,
+      "experimental_control": "none",
+      "exploration_ratio": 0.0,
+      "failures_per_task": 1.1666666666666667,
+      "iterations": 2,
+      "mode": "sorelia",
+      "stress_failures_per_task": 1.7916666666666667,
+      "stress_task_success_rate": 0.8333333333333334,
+      "task_success_rate": 0.8541666666666666
+    },
+    "random_cluster_assignment": {
+      "catastrophic_action_rate": 0.041666666666666664,
+      "exact_eval_leakage": 0,
+      "experimental_control": "random_cluster_assignment",
+      "exploration_ratio": 0.2,
+      "failures_per_task": 0.9375,
+      "iterations": 2,
+      "mode": "sorelia",
+      "stress_failures_per_task": 1.2916666666666667,
+      "stress_task_success_rate": 0.875,
+      "task_success_rate": 0.9583333333333334
+    },
+    "shuffled_failure_labels": {
+      "catastrophic_action_rate": 0.041666666666666664,
+      "exact_eval_leakage": 0,
+      "experimental_control": "shuffled_failure_labels",
+      "exploration_ratio": 0.2,
+      "failures_per_task": 0.8333333333333334,
+      "iterations": 2,
+      "mode": "sorelia",
+      "stress_failures_per_task": 1.375,
+      "stress_task_success_rate": 0.9166666666666666,
+      "task_success_rate": 0.9166666666666666
+    },
+    "single_iteration": {
+      "catastrophic_action_rate": 0.041666666666666664,
+      "exact_eval_leakage": 0,
+      "experimental_control": "none",
+      "exploration_ratio": 0.2,
+      "failures_per_task": 1.7708333333333333,
+      "iterations": 1,
+      "mode": "sorelia",
+      "stress_failures_per_task": 2.3333333333333335,
+      "stress_task_success_rate": 0.8333333333333334,
+      "task_success_rate": 0.875
+    },
+    "static_priority": {
+      "catastrophic_action_rate": 0.041666666666666664,
+      "exact_eval_leakage": 0,
+      "experimental_control": "none",
+      "exploration_ratio": 0.2,
+      "failures_per_task": 0.6041666666666666,
+      "iterations": 2,
+      "mode": "priority",
+      "stress_failures_per_task": 0.9166666666666666,
+      "stress_task_success_rate": 0.9166666666666666,
+      "task_success_rate": 0.9583333333333334
+    }
+  },
+  "v090_end_to_end_final": {
+    "catastrophic_action_rate": 0.041666666666666664,
+    "cost_per_success": 0.00012636363636363634,
+    "error_propagation_depth": 1.0,
+    "exact_eval_leakage": 0,
+    "failure_distribution_js": 0.030090641722796463,
+    "failure_events": 25,
+    "failure_recurrence_rate": 0.75,
+    "failure_type_counts": {
+      "action": 1,
+      "grounding": 1,
+      "memory": 3,
+      "planning": 2,
+      "recovery": 8,
+      "safety": 1,
+      "state_tracking": 5,
+      "verification": 4
+    },
+    "failures_per_task": 1.0416666666666667,
+    "first_failure_position": 0.25740740740740736,
+    "frontier_net_risk_change": -0.16961954939298396,
+    "frontier_risk_after": 0.8269285714285713,
+    "frontier_risk_before": 0.9965481208215553,
+    "frontier_summary": {
+      "contracting": 2,
+      "emergent": 1,
+      "expanding": 1,
+      "extinct": 1,
+      "persistent": 1
+    },
+    "frontier_topology_events": 1,
+    "generated": 32,
+    "iteration": 2,
+    "matching_ambiguous_rate": 0.25,
+    "mean_cost": 0.00011583333333333331,
+    "mean_latency_ms": 0.9673465833396714,
+    "mean_partial_success": 0.9583333333333334,
+    "mean_steps": 5.791666666666667,
+    "n_clusters": 5,
+    "n_failures_for_curriculum": 35,
+    "n_tasks": 24,
+    "near_eval_duplicate_pairs": 0,
+    "paired_success_delta": {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "mean": 0.0,
+      "n": 24
+    },
+    "recovery_attempts": 14,
+    "recovery_success_rate": 0.7857142857142857,
+    "rejected": 0,
+    "risk_displacement_ratio": 0.5677234037986484,
+    "risk_introduced": 0.22276706344593153,
+    "risk_removed": 0.3923866128389155,
+    "silhouette": 0.6576131491401593,
+    "split": "eval",
+    "state_corruption_rate": 0.20833333333333334,
+    "task_success_rate": 0.9166666666666666,
+    "verified": 32
+  },
+  "version": "0.9.0"
+}

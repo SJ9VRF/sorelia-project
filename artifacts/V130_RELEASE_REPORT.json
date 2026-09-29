@@ -1,0 +1,55 @@
+{
+  "release": "1.3.0",
+  "author": "Aura Yavary",
+  "project": "SORELIA",
+  "tests": {
+    "passed": 43,
+    "failed": 0
+  },
+  "claim_evidence_audit": {
+    "ok": true,
+    "claims": 26,
+    "errors": 0,
+    "warnings": 0
+  },
+  "release_reproduction": "passed",
+  "paper": {
+    "path": "paper/main.pdf",
+    "pages": 6,
+    "render_verified": true,
+    "figures": [
+      "architecture",
+      "moving failure frontier"
+    ]
+  },
+  "flagship_page": {
+    "path": "website/index.html",
+    "required_sections": 14,
+    "local_link_contract": "passed",
+    "direct_visual_navigation": "blocked_by_artifact_environment_policy"
+  },
+  "demo_video": {
+    "path": "website/assets/sorelia-demo.mp4",
+    "type": "evidence-grounded trajectory replay visualization",
+    "source": "artifacts/browser_smoke.json / browser-real-0001",
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "duration_seconds": 20.8,
+    "literal_screen_recording": false,
+    "frontier_model_run": false
+  },
+  "visual_assets": [
+    "website/assets/architecture.svg",
+    "website/assets/failure-frontier.svg",
+    "website/assets/project-card.png"
+  ],
+  "scientific_evidence_tier": "engineering smoke / research harness; paper-scale frontier-agent evidence pending",
+  "unsupported_claims": [
+    "SOTA superiority",
+    "frontier-model superiority",
+    "production reliability",
+    "completed human calibration"
+  ]
+}

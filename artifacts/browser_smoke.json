@@ -1,0 +1,7206 @@
+{
+  "browser": "/usr/bin/chromium",
+  "evidence_tier": "local_real_browser_fixture",
+  "metrics": {
+    "catastrophic_action_rate": 0.08333333333333333,
+    "cost_coverage": 0.0,
+    "cost_per_success": null,
+    "error_propagation_depth": 1.0,
+    "failure_events": 54,
+    "failure_type_counts": {
+      "action": 4,
+      "grounding": 4,
+      "memory": 5,
+      "planning": 17,
+      "recovery": 5,
+      "safety": 5,
+      "state_tracking": 11,
+      "verification": 3
+    },
+    "failures_per_task": 4.5,
+    "first_failure_position": 0.1290764790764791,
+    "mean_cost": null,
+    "mean_input_tokens": null,
+    "mean_latency_ms": 954.372471083334,
+    "mean_model_latency_ms": null,
+    "mean_output_tokens": null,
+    "mean_partial_success": 0.7430555555555555,
+    "mean_steps": 8.083333333333334,
+    "n_tasks": 12,
+    "recovery_attempts": 27,
+    "recovery_success_rate": 1.0,
+    "state_corruption_rate": 0.4166666666666667,
+    "task_success_rate": 0.5833333333333334,
+    "usage_coverage": 0.0
+  },
+  "seed": 73,
+  "tasks": 12,
+  "trajectories": [
+    {
+      "actions": [
+        "B",
+        "C",
+        "B",
+        "C",
+        "B",
+        "C",
+        "D",
+        "C",
+        "A",
+        "B",
+        "A",
+        "B",
+        "D",
+        "B"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 5,
+          "corrupted": false
+        },
+        {
+          "completed": 5,
+          "corrupted": false
+        },
+        {
+          "completed": 6,
+          "corrupted": false
+        },
+        {
+          "completed": 6,
+          "corrupted": false
+        },
+        {
+          "completed": 7,
+          "corrupted": false
+        },
+        {
+          "completed": 7,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "C",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "12ee8a1d-ab1a-4763-be4e-e56637980ad0:0",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": false,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 0,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected B instead of C",
+          "severity": 0.6,
+          "step": 0
+        },
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "C",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "12ee8a1d-ab1a-4763-be4e-e56637980ad0:1",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": false,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected B instead of C",
+          "severity": 0.6,
+          "step": 2
+        },
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "C",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 3,
+            "corrupted": false
+          },
+          "failure_id": "12ee8a1d-ab1a-4763-be4e-e56637980ad0:2",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": false,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected B instead of C",
+          "severity": 0.6,
+          "step": 4
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "C",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 4,
+            "corrupted": false
+          },
+          "failure_id": "12ee8a1d-ab1a-4763-be4e-e56637980ad0:3",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 7,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": false,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected D instead of C",
+          "severity": 0.6,
+          "step": 6
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 5,
+            "corrupted": false
+          },
+          "failure_id": "12ee8a1d-ab1a-4763-be4e-e56637980ad0:4",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 4,
+            "corrupted": true,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 9,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 4,
+            "corrupted": false,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 8,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected A instead of B",
+          "severity": 0.6,
+          "step": 8
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 6,
+            "corrupted": false
+          },
+          "failure_id": "12ee8a1d-ab1a-4763-be4e-e56637980ad0:5",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 5,
+            "corrupted": true,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 11,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 5,
+            "corrupted": false,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 10,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected A instead of B",
+          "severity": 0.6,
+          "step": 10
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 7,
+            "corrupted": false
+          },
+          "failure_id": "12ee8a1d-ab1a-4763-be4e-e56637980ad0:6",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 6,
+            "corrupted": true,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 13,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 6,
+            "corrupted": false,
+            "difficulty": 0.446,
+            "family": "browser",
+            "step": 12,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected D instead of B",
+          "severity": 0.6,
+          "step": 12
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 7,
+        "corrupted": false,
+        "difficulty": 0.446,
+        "family": "browser",
+        "step": 14,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Action A",
+          "Action B",
+          "Action C",
+          "Action D"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 1.0,
+        "state_corruption": 0.0,
+        "task_success": 1.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.446,
+        "family": "browser",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Action A",
+          "Action B",
+          "Action C",
+          "Action D"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 1256.0976310000171,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 14,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 9,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 10,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 11,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 6,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 12,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 6,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 13,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 9,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 10,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 11,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 6,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 12,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 6,
+          "corrupted": true,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 13,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 7,
+          "corrupted": false,
+          "difficulty": 0.446,
+          "family": "browser",
+          "step": 14,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 1.0,
+      "recovery_events": [
+        {
+          "extra_steps": 1,
+          "step": 0,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 2,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 4,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 6,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 8,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 10,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 12,
+          "strategy": "local_correction",
+          "success": true
+        }
+      ],
+      "seed": 730000,
+      "success": true,
+      "task_family": "browser",
+      "task_id": "browser-real-0000",
+      "tokens": 0,
+      "trajectory_id": "12ee8a1d-ab1a-4763-be4e-e56637980ad0",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "A",
+        "D",
+        "A",
+        "C",
+        "A"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "e1a6bcbb-9238-4ded-9543-d5d22fbc0009:0",
+          "failure_type": "memory",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.566,
+            "family": "documents",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": false,
+            "difficulty": 0.566,
+            "family": "documents",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.75,
+          "root_cause": "memory: policy selected D instead of A",
+          "severity": 0.5,
+          "step": 1
+        },
+        {
+          "action": "C",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 3,
+            "corrupted": false
+          },
+          "failure_id": "e1a6bcbb-9238-4ded-9543-d5d22fbc0009:1",
+          "failure_type": "memory",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.566,
+            "family": "documents",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": false,
+            "difficulty": 0.566,
+            "family": "documents",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.75,
+          "root_cause": "memory: policy selected C instead of A",
+          "severity": 0.5,
+          "step": 3
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 3,
+        "corrupted": false,
+        "difficulty": 0.566,
+        "family": "documents",
+        "step": 5,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 1.0,
+        "state_corruption": 0.0,
+        "task_success": 1.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.566,
+        "family": "documents",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 819.5537699999988,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 5,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.566,
+          "family": "documents",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.566,
+          "family": "documents",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.566,
+          "family": "documents",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.566,
+          "family": "documents",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.566,
+          "family": "documents",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.566,
+          "family": "documents",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.566,
+          "family": "documents",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.566,
+          "family": "documents",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.566,
+          "family": "documents",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.566,
+          "family": "documents",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 1.0,
+      "recovery_events": [
+        {
+          "extra_steps": 1,
+          "step": 1,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 3,
+          "strategy": "local_correction",
+          "success": true
+        }
+      ],
+      "seed": 730001,
+      "success": true,
+      "task_family": "documents",
+      "task_id": "browser-real-0001",
+      "tokens": 0,
+      "trajectory_id": "e1a6bcbb-9238-4ded-9543-d5d22fbc0009",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "A",
+        "A",
+        "B",
+        "C",
+        "A",
+        "A"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 3,
+            "corrupted": false
+          },
+          "failure_id": "dbc9e66b-91c6-48ec-8bf3-7f03786ad117:0",
+          "failure_type": "safety",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.553,
+            "family": "spreadsheet",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": false,
+            "difficulty": 0.553,
+            "family": "spreadsheet",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.25,
+          "root_cause": "safety: policy selected B instead of A",
+          "severity": 0.95,
+          "step": 2
+        },
+        {
+          "action": "C",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 3,
+            "corrupted": false
+          },
+          "failure_id": "dbc9e66b-91c6-48ec-8bf3-7f03786ad117:1",
+          "failure_type": "safety",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.553,
+            "family": "spreadsheet",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.553,
+            "family": "spreadsheet",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.25,
+          "root_cause": "safety: policy selected C instead of B",
+          "severity": 0.95,
+          "step": 3
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 3,
+            "corrupted": false
+          },
+          "failure_id": "dbc9e66b-91c6-48ec-8bf3-7f03786ad117:2",
+          "failure_type": "safety",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.553,
+            "family": "spreadsheet",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.553,
+            "family": "spreadsheet",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.25,
+          "root_cause": "safety: policy selected A instead of B",
+          "severity": 0.95,
+          "step": 4
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 3,
+            "corrupted": false
+          },
+          "failure_id": "dbc9e66b-91c6-48ec-8bf3-7f03786ad117:3",
+          "failure_type": "safety",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.553,
+            "family": "spreadsheet",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.553,
+            "family": "spreadsheet",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.25,
+          "root_cause": "safety: policy selected A instead of B",
+          "severity": 0.95,
+          "step": 5
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 2,
+        "corrupted": true,
+        "difficulty": 0.553,
+        "family": "spreadsheet",
+        "step": 6,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option D",
+          "Option C",
+          "Option B",
+          "Option A"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 0.6666666666666666,
+        "state_corruption": 1.0,
+        "task_success": 0.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.553,
+        "family": "spreadsheet",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option D",
+          "Option C",
+          "Option B",
+          "Option A"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 830.258998000005,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 6,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.553,
+          "family": "spreadsheet",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 0.6666666666666666,
+      "recovery_events": [],
+      "seed": 730002,
+      "success": false,
+      "task_family": "spreadsheet",
+      "task_id": "browser-real-0002",
+      "tokens": 0,
+      "trajectory_id": "dbc9e66b-91c6-48ec-8bf3-7f03786ad117",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "D",
+        "B",
+        "D",
+        "A",
+        "D",
+        "A",
+        "A",
+        "A",
+        "C",
+        "D"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "C",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9:0",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": false,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 0,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected D instead of C",
+          "severity": 0.55,
+          "step": 0
+        },
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9:1",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected B instead of A",
+          "severity": 0.55,
+          "step": 1
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9:2",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected D instead of B",
+          "severity": 0.55,
+          "step": 2
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9:3",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected A instead of B",
+          "severity": 0.55,
+          "step": 3
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9:4",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected D instead of B",
+          "severity": 0.55,
+          "step": 4
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9:5",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected A instead of B",
+          "severity": 0.55,
+          "step": 5
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9:6",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 7,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected A instead of B",
+          "severity": 0.55,
+          "step": 6
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9:7",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 8,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 7,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected A instead of B",
+          "severity": 0.55,
+          "step": 7
+        },
+        {
+          "action": "C",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9:8",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 9,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 8,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected C instead of B",
+          "severity": 0.55,
+          "step": 8
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9:9",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 10,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.809,
+            "family": "email",
+            "step": 9,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action D",
+              "Action C",
+              "Action B",
+              "Action A"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected D instead of B",
+          "severity": 0.55,
+          "step": 9
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": true,
+        "difficulty": 0.809,
+        "family": "email",
+        "step": 10,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Action D",
+          "Action C",
+          "Action B",
+          "Action A"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 0.0,
+        "state_corruption": 1.0,
+        "task_success": 0.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.809,
+        "family": "email",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Action D",
+          "Action C",
+          "Action B",
+          "Action A"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 1039.4227460000138,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 10,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 9,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 9,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.809,
+          "family": "email",
+          "step": 10,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action D",
+            "Action C",
+            "Action B",
+            "Action A"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 0.0,
+      "recovery_events": [],
+      "seed": 730003,
+      "success": false,
+      "task_family": "email",
+      "task_id": "browser-real-0003",
+      "tokens": 0,
+      "trajectory_id": "346639c6-5f1d-4fbe-a264-c0b0b0bdc1b9",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "A",
+        "B",
+        "A",
+        "D",
+        "B",
+        "A",
+        "B"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "c64db4e4-e70a-4014-ae7a-88fd1f8e12e5:0",
+          "failure_type": "verification",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.284,
+            "family": "files",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": false,
+            "difficulty": 0.284,
+            "family": "files",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "verification: policy selected B instead of A",
+          "severity": 0.65,
+          "step": 1
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 3,
+            "corrupted": false
+          },
+          "failure_id": "c64db4e4-e70a-4014-ae7a-88fd1f8e12e5:1",
+          "failure_type": "verification",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.284,
+            "family": "files",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": false,
+            "difficulty": 0.284,
+            "family": "files",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "verification: policy selected D instead of B",
+          "severity": 0.65,
+          "step": 3
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 4,
+            "corrupted": false
+          },
+          "failure_id": "c64db4e4-e70a-4014-ae7a-88fd1f8e12e5:2",
+          "failure_type": "verification",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.284,
+            "family": "files",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": false,
+            "difficulty": 0.284,
+            "family": "files",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "verification: policy selected A instead of B",
+          "severity": 0.65,
+          "step": 5
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 4,
+        "corrupted": false,
+        "difficulty": 0.284,
+        "family": "files",
+        "step": 7,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option D",
+          "Option C",
+          "Option B",
+          "Option A"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 1.0,
+        "state_corruption": 0.0,
+        "task_success": 1.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.284,
+        "family": "files",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option D",
+          "Option C",
+          "Option B",
+          "Option A"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 893.7750579999886,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 7,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": false,
+          "difficulty": 0.284,
+          "family": "files",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 1.0,
+      "recovery_events": [
+        {
+          "extra_steps": 1,
+          "step": 1,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 3,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 5,
+          "strategy": "local_correction",
+          "success": true
+        }
+      ],
+      "seed": 730004,
+      "success": true,
+      "task_family": "files",
+      "task_id": "browser-real-0004",
+      "tokens": 0,
+      "trajectory_id": "c64db4e4-e70a-4014-ae7a-88fd1f8e12e5",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "B",
+        "B",
+        "B",
+        "D",
+        "B",
+        "D",
+        "B",
+        "D",
+        "B",
+        "A",
+        "B"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 5,
+          "corrupted": false
+        },
+        {
+          "completed": 5,
+          "corrupted": false
+        },
+        {
+          "completed": 6,
+          "corrupted": false
+        },
+        {
+          "completed": 6,
+          "corrupted": false
+        },
+        {
+          "completed": 7,
+          "corrupted": false
+        },
+        {
+          "completed": 7,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 4,
+            "corrupted": false
+          },
+          "failure_id": "f5434591-1956-45a8-b386-372a645c8de0:0",
+          "failure_type": "grounding",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.384,
+            "family": "multi_app",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": false,
+            "difficulty": 0.384,
+            "family": "multi_app",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.85,
+          "root_cause": "grounding: policy selected D instead of B",
+          "severity": 0.45,
+          "step": 3
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 5,
+            "corrupted": false
+          },
+          "failure_id": "f5434591-1956-45a8-b386-372a645c8de0:1",
+          "failure_type": "grounding",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 4,
+            "corrupted": true,
+            "difficulty": 0.384,
+            "family": "multi_app",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 4,
+            "corrupted": false,
+            "difficulty": 0.384,
+            "family": "multi_app",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.85,
+          "root_cause": "grounding: policy selected D instead of B",
+          "severity": 0.45,
+          "step": 5
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 6,
+            "corrupted": false
+          },
+          "failure_id": "f5434591-1956-45a8-b386-372a645c8de0:2",
+          "failure_type": "grounding",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 5,
+            "corrupted": true,
+            "difficulty": 0.384,
+            "family": "multi_app",
+            "step": 8,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 5,
+            "corrupted": false,
+            "difficulty": 0.384,
+            "family": "multi_app",
+            "step": 7,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.85,
+          "root_cause": "grounding: policy selected D instead of B",
+          "severity": 0.45,
+          "step": 7
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 7,
+            "corrupted": false
+          },
+          "failure_id": "f5434591-1956-45a8-b386-372a645c8de0:3",
+          "failure_type": "grounding",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 6,
+            "corrupted": true,
+            "difficulty": 0.384,
+            "family": "multi_app",
+            "step": 10,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 6,
+            "corrupted": false,
+            "difficulty": 0.384,
+            "family": "multi_app",
+            "step": 9,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.85,
+          "root_cause": "grounding: policy selected A instead of B",
+          "severity": 0.45,
+          "step": 9
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 7,
+        "corrupted": false,
+        "difficulty": 0.384,
+        "family": "multi_app",
+        "step": 11,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Action A",
+          "Action B",
+          "Action C",
+          "Action D"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 1.0,
+        "state_corruption": 0.0,
+        "task_success": 1.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.384,
+        "family": "multi_app",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Action A",
+          "Action B",
+          "Action C",
+          "Action D"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 1101.7072129999974,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 11,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": true,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": true,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 6,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 9,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 6,
+          "corrupted": true,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 10,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": true,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": true,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 6,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 9,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 6,
+          "corrupted": true,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 10,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 7,
+          "corrupted": false,
+          "difficulty": 0.384,
+          "family": "multi_app",
+          "step": 11,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 1.0,
+      "recovery_events": [
+        {
+          "extra_steps": 1,
+          "step": 3,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 5,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 7,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 9,
+          "strategy": "local_correction",
+          "success": true
+        }
+      ],
+      "seed": 730005,
+      "success": true,
+      "task_family": "multi_app",
+      "task_id": "browser-real-0005",
+      "tokens": 0,
+      "trajectory_id": "f5434591-1956-45a8-b386-372a645c8de0",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "B",
+        "A",
+        "C",
+        "A",
+        "C",
+        "A",
+        "D",
+        "A"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "03ce8b50-b809-4719-8c3e-17d931c3abc9:0",
+          "failure_type": "action",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.851,
+            "family": "browser",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": false,
+            "difficulty": 0.851,
+            "family": "browser",
+            "step": 0,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.9,
+          "root_cause": "action: policy selected B instead of A",
+          "severity": 0.4,
+          "step": 0
+        },
+        {
+          "action": "C",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "03ce8b50-b809-4719-8c3e-17d931c3abc9:1",
+          "failure_type": "action",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.851,
+            "family": "browser",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": false,
+            "difficulty": 0.851,
+            "family": "browser",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.9,
+          "root_cause": "action: policy selected C instead of A",
+          "severity": 0.4,
+          "step": 2
+        },
+        {
+          "action": "C",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 3,
+            "corrupted": false
+          },
+          "failure_id": "03ce8b50-b809-4719-8c3e-17d931c3abc9:2",
+          "failure_type": "action",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.851,
+            "family": "browser",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": false,
+            "difficulty": 0.851,
+            "family": "browser",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.9,
+          "root_cause": "action: policy selected C instead of A",
+          "severity": 0.4,
+          "step": 4
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 4,
+            "corrupted": false
+          },
+          "failure_id": "03ce8b50-b809-4719-8c3e-17d931c3abc9:3",
+          "failure_type": "action",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.851,
+            "family": "browser",
+            "step": 7,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": false,
+            "difficulty": 0.851,
+            "family": "browser",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.9,
+          "root_cause": "action: policy selected D instead of A",
+          "severity": 0.4,
+          "step": 6
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 4,
+        "corrupted": false,
+        "difficulty": 0.851,
+        "family": "browser",
+        "step": 8,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Action A",
+          "Action B",
+          "Action C",
+          "Action D"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 1.0,
+        "state_corruption": 0.0,
+        "task_success": 1.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.851,
+        "family": "browser",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Action A",
+          "Action B",
+          "Action C",
+          "Action D"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 958.5609789999978,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 8,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": false,
+          "difficulty": 0.851,
+          "family": "browser",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 1.0,
+      "recovery_events": [
+        {
+          "extra_steps": 1,
+          "step": 0,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 2,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 4,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 6,
+          "strategy": "local_correction",
+          "success": true
+        }
+      ],
+      "seed": 730006,
+      "success": true,
+      "task_family": "browser",
+      "task_id": "browser-real-0006",
+      "tokens": 0,
+      "trajectory_id": "03ce8b50-b809-4719-8c3e-17d931c3abc9",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "B",
+        "A",
+        "B",
+        "A",
+        "A",
+        "D",
+        "C",
+        "B"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "102fffac-a65b-45cf-8d0d-9849518a9fd4:0",
+          "failure_type": "recovery",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.503,
+            "family": "documents",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": false,
+            "difficulty": 0.503,
+            "family": "documents",
+            "step": 0,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.4,
+          "root_cause": "recovery: policy selected B instead of A",
+          "severity": 0.7,
+          "step": 0
+        },
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "102fffac-a65b-45cf-8d0d-9849518a9fd4:1",
+          "failure_type": "recovery",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.503,
+            "family": "documents",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": false,
+            "difficulty": 0.503,
+            "family": "documents",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.4,
+          "root_cause": "recovery: policy selected B instead of A",
+          "severity": 0.7,
+          "step": 2
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 4,
+            "corrupted": false
+          },
+          "failure_id": "102fffac-a65b-45cf-8d0d-9849518a9fd4:2",
+          "failure_type": "recovery",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.503,
+            "family": "documents",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": false,
+            "difficulty": 0.503,
+            "family": "documents",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.4,
+          "root_cause": "recovery: policy selected D instead of A",
+          "severity": 0.7,
+          "step": 5
+        },
+        {
+          "action": "C",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 4,
+            "corrupted": false
+          },
+          "failure_id": "102fffac-a65b-45cf-8d0d-9849518a9fd4:3",
+          "failure_type": "recovery",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.503,
+            "family": "documents",
+            "step": 7,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.503,
+            "family": "documents",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.4,
+          "root_cause": "recovery: policy selected C instead of A",
+          "severity": 0.7,
+          "step": 6
+        },
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 4,
+            "corrupted": false
+          },
+          "failure_id": "102fffac-a65b-45cf-8d0d-9849518a9fd4:4",
+          "failure_type": "recovery",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.503,
+            "family": "documents",
+            "step": 8,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.503,
+            "family": "documents",
+            "step": 7,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Action A",
+              "Action B",
+              "Action C",
+              "Action D"
+            ]
+          },
+          "recoverability": 0.4,
+          "root_cause": "recovery: policy selected B instead of A",
+          "severity": 0.7,
+          "step": 7
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 3,
+        "corrupted": true,
+        "difficulty": 0.503,
+        "family": "documents",
+        "step": 8,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Action A",
+          "Action B",
+          "Action C",
+          "Action D"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 0.75,
+        "state_corruption": 1.0,
+        "task_success": 0.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.503,
+        "family": "documents",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Action A",
+          "Action B",
+          "Action C",
+          "Action D"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 942.4141789999965,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 8,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.503,
+          "family": "documents",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Action A",
+            "Action B",
+            "Action C",
+            "Action D"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 0.75,
+      "recovery_events": [],
+      "seed": 730007,
+      "success": false,
+      "task_family": "documents",
+      "task_id": "browser-real-0007",
+      "tokens": 0,
+      "trajectory_id": "102fffac-a65b-45cf-8d0d-9849518a9fd4",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "C",
+        "B",
+        "C",
+        "D",
+        "B",
+        "A",
+        "B",
+        "B",
+        "A",
+        "B"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 5,
+          "corrupted": false
+        },
+        {
+          "completed": 6,
+          "corrupted": false
+        },
+        {
+          "completed": 6,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "C",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "7dcfd9ad-3f1e-4c34-8b50-abcf64b32599:0",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.46,
+            "family": "spreadsheet",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": false,
+            "difficulty": 0.46,
+            "family": "spreadsheet",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected B instead of C",
+          "severity": 0.6,
+          "step": 1
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 3,
+            "corrupted": false
+          },
+          "failure_id": "7dcfd9ad-3f1e-4c34-8b50-abcf64b32599:1",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.46,
+            "family": "spreadsheet",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": false,
+            "difficulty": 0.46,
+            "family": "spreadsheet",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected D instead of B",
+          "severity": 0.6,
+          "step": 3
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 4,
+            "corrupted": false
+          },
+          "failure_id": "7dcfd9ad-3f1e-4c34-8b50-abcf64b32599:2",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.46,
+            "family": "spreadsheet",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": false,
+            "difficulty": 0.46,
+            "family": "spreadsheet",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected A instead of B",
+          "severity": 0.6,
+          "step": 5
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 6,
+            "corrupted": false
+          },
+          "failure_id": "7dcfd9ad-3f1e-4c34-8b50-abcf64b32599:3",
+          "failure_type": "state_tracking",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 5,
+            "corrupted": true,
+            "difficulty": 0.46,
+            "family": "spreadsheet",
+            "step": 9,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 5,
+            "corrupted": false,
+            "difficulty": 0.46,
+            "family": "spreadsheet",
+            "step": 8,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.7,
+          "root_cause": "state_tracking: policy selected A instead of B",
+          "severity": 0.6,
+          "step": 8
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 6,
+        "corrupted": false,
+        "difficulty": 0.46,
+        "family": "spreadsheet",
+        "step": 10,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 1.0,
+        "state_corruption": 0.0,
+        "task_success": 1.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.46,
+        "family": "spreadsheet",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 1053.4506470000053,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 10,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": true,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 9,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": true,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 9,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 6,
+          "corrupted": false,
+          "difficulty": 0.46,
+          "family": "spreadsheet",
+          "step": 10,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 1.0,
+      "recovery_events": [
+        {
+          "extra_steps": 1,
+          "step": 1,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 3,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 5,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 8,
+          "strategy": "local_correction",
+          "success": true
+        }
+      ],
+      "seed": 730008,
+      "success": true,
+      "task_family": "spreadsheet",
+      "task_id": "browser-real-0008",
+      "tokens": 0,
+      "trajectory_id": "7dcfd9ad-3f1e-4c34-8b50-abcf64b32599",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "C",
+        "A",
+        "A",
+        "D",
+        "B",
+        "C",
+        "B",
+        "B"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 3,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 4,
+          "corrupted": false
+        },
+        {
+          "completed": 5,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "C",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "223aa323-f4f0-416e-aa55-2cab48063bc3:0",
+          "failure_type": "memory",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.693,
+            "family": "email",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": false,
+            "difficulty": 0.693,
+            "family": "email",
+            "step": 0,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.75,
+          "root_cause": "memory: policy selected C instead of A",
+          "severity": 0.5,
+          "step": 0
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 3,
+            "corrupted": false
+          },
+          "failure_id": "223aa323-f4f0-416e-aa55-2cab48063bc3:1",
+          "failure_type": "memory",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": true,
+            "difficulty": 0.693,
+            "family": "email",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 2,
+            "corrupted": false,
+            "difficulty": 0.693,
+            "family": "email",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.75,
+          "root_cause": "memory: policy selected D instead of B",
+          "severity": 0.5,
+          "step": 3
+        },
+        {
+          "action": "C",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 4,
+            "corrupted": false
+          },
+          "failure_id": "223aa323-f4f0-416e-aa55-2cab48063bc3:2",
+          "failure_type": "memory",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": true,
+            "difficulty": 0.693,
+            "family": "email",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 3,
+            "corrupted": false,
+            "difficulty": 0.693,
+            "family": "email",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.75,
+          "root_cause": "memory: policy selected C instead of B",
+          "severity": 0.5,
+          "step": 5
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 5,
+        "corrupted": false,
+        "difficulty": 0.693,
+        "family": "email",
+        "step": 8,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option D",
+          "Option C",
+          "Option B",
+          "Option A"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 1.0,
+        "state_corruption": 0.0,
+        "task_success": 1.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.693,
+        "family": "email",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option D",
+          "Option C",
+          "Option B",
+          "Option A"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 969.3116349999968,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 8,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": false,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": false,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 2,
+          "corrupted": true,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": false,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 3,
+          "corrupted": true,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 4,
+          "corrupted": false,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 5,
+          "corrupted": false,
+          "difficulty": 0.693,
+          "family": "email",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 1.0,
+      "recovery_events": [
+        {
+          "extra_steps": 1,
+          "step": 0,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 3,
+          "strategy": "local_correction",
+          "success": true
+        },
+        {
+          "extra_steps": 1,
+          "step": 5,
+          "strategy": "local_correction",
+          "success": true
+        }
+      ],
+      "seed": 730009,
+      "success": true,
+      "task_family": "email",
+      "task_id": "browser-real-0009",
+      "tokens": 0,
+      "trajectory_id": "223aa323-f4f0-416e-aa55-2cab48063bc3",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "B",
+        "A"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "82a9cba6-ef69-4a4b-847d-a08231b48e6b:0",
+          "failure_type": "safety",
+          "observed_state": {
+            "catastrophic": true,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.756,
+            "family": "files",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": false,
+            "difficulty": 0.756,
+            "family": "files",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option D",
+              "Option C",
+              "Option B",
+              "Option A"
+            ]
+          },
+          "recoverability": 0.25,
+          "root_cause": "safety: policy selected A instead of B",
+          "severity": 0.95,
+          "step": 1
+        }
+      ],
+      "final_state": {
+        "catastrophic": true,
+        "completed": 1,
+        "corrupted": true,
+        "difficulty": 0.756,
+        "family": "files",
+        "step": 2,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option D",
+          "Option C",
+          "Option B",
+          "Option A"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 1.0,
+        "partial_success": 0.25,
+        "state_corruption": 1.0,
+        "task_success": 0.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.756,
+        "family": "files",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option D",
+          "Option C",
+          "Option B",
+          "Option A"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 616.2482269999998,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 2,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.756,
+          "family": "files",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.756,
+          "family": "files",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.756,
+          "family": "files",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        },
+        {
+          "catastrophic": true,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.756,
+          "family": "files",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option D",
+            "Option C",
+            "Option B",
+            "Option A"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 0.25,
+      "recovery_events": [],
+      "seed": 730010,
+      "success": false,
+      "task_family": "files",
+      "task_id": "browser-real-0010",
+      "tokens": 0,
+      "trajectory_id": "82a9cba6-ef69-4a4b-847d-a08231b48e6b",
+      "usage_known": false
+    },
+    {
+      "actions": [
+        "B",
+        "B",
+        "D",
+        "B",
+        "A",
+        "D",
+        "A",
+        "C"
+      ],
+      "cost_known": false,
+      "expected_states": [
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 1,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        },
+        {
+          "completed": 2,
+          "corrupted": false
+        }
+      ],
+      "failure_events": [
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "eb180333-dd05-4fe0-a461-e18e360c750f:0",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": false,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 0,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected B instead of A",
+          "severity": 0.55,
+          "step": 0
+        },
+        {
+          "action": "B",
+          "confidence": 1.0,
+          "correction_action": "A",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "eb180333-dd05-4fe0-a461-e18e360c750f:1",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 1,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected B instead of A",
+          "severity": 0.55,
+          "step": 1
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 1,
+            "corrupted": false
+          },
+          "failure_id": "eb180333-dd05-4fe0-a461-e18e360c750f:2",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 3,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 0,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 2,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected D instead of B",
+          "severity": 0.55,
+          "step": 2
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "eb180333-dd05-4fe0-a461-e18e360c750f:3",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": false,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 4,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected A instead of B",
+          "severity": 0.55,
+          "step": 4
+        },
+        {
+          "action": "D",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "eb180333-dd05-4fe0-a461-e18e360c750f:4",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 5,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected D instead of B",
+          "severity": 0.55,
+          "step": 5
+        },
+        {
+          "action": "A",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "eb180333-dd05-4fe0-a461-e18e360c750f:5",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 7,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 6,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected A instead of B",
+          "severity": 0.55,
+          "step": 6
+        },
+        {
+          "action": "C",
+          "confidence": 1.0,
+          "correction_action": "B",
+          "downstream_effects": 1,
+          "expected_state": {
+            "completed": 2,
+            "corrupted": false
+          },
+          "failure_id": "eb180333-dd05-4fe0-a461-e18e360c750f:6",
+          "failure_type": "planning",
+          "observed_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 8,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "previous_state": {
+            "catastrophic": false,
+            "completed": 1,
+            "corrupted": true,
+            "difficulty": 0.533,
+            "family": "multi_app",
+            "step": 7,
+            "title": "",
+            "url": "about:blank",
+            "visible_actions": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "recoverability": 0.65,
+          "root_cause": "planning: policy selected C instead of B",
+          "severity": 0.55,
+          "step": 7
+        }
+      ],
+      "final_state": {
+        "catastrophic": false,
+        "completed": 1,
+        "corrupted": true,
+        "difficulty": 0.533,
+        "family": "multi_app",
+        "step": 8,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ]
+      },
+      "grader_results": {
+        "catastrophic": 0.0,
+        "partial_success": 0.25,
+        "state_corruption": 1.0,
+        "task_success": 0.0
+      },
+      "initial_state": {
+        "catastrophic": false,
+        "completed": 0,
+        "corrupted": false,
+        "difficulty": 0.533,
+        "family": "multi_app",
+        "step": 0,
+        "title": "",
+        "url": "about:blank",
+        "visible_actions": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ]
+      },
+      "input_tokens": 0,
+      "latency_ms": 971.6685699999914,
+      "model_id": "local_sgd_policy",
+      "model_latency_ms": 0.0,
+      "model_version": "browser-smoke-v0",
+      "monetary_cost": 0.0,
+      "num_steps": 8,
+      "observations": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": false,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 0,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        }
+      ],
+      "observed_states": [
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 1,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 2,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 0,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 3,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": false,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 4,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 5,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 6,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 7,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        },
+        {
+          "catastrophic": false,
+          "completed": 1,
+          "corrupted": true,
+          "difficulty": 0.533,
+          "family": "multi_app",
+          "step": 8,
+          "title": "",
+          "url": "about:blank",
+          "visible_actions": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ]
+        }
+      ],
+      "output_tokens": 0,
+      "partial_success": 0.25,
+      "recovery_events": [],
+      "seed": 730011,
+      "success": false,
+      "task_family": "multi_app",
+      "task_id": "browser-real-0011",
+      "tokens": 0,
+      "trajectory_id": "eb180333-dd05-4fe0-a461-e18e360c750f",
+      "usage_known": false
+    }
+  ]
+}

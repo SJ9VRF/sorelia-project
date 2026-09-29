@@ -1,0 +1,141 @@
+{
+  "audit": {
+    "claims": 23,
+    "errors": [],
+    "ok": true,
+    "warnings": []
+  },
+  "author": "Aura Yavary",
+  "browser_smoke_metrics": {
+    "catastrophic_action_rate": 0.08333333333333333,
+    "cost_coverage": 0.0,
+    "cost_per_success": null,
+    "error_propagation_depth": 1.0,
+    "failure_events": 54,
+    "failure_type_counts": {
+      "action": 4,
+      "grounding": 4,
+      "memory": 5,
+      "planning": 17,
+      "recovery": 5,
+      "safety": 5,
+      "state_tracking": 11,
+      "verification": 3
+    },
+    "failures_per_task": 4.5,
+    "first_failure_position": 0.1290764790764791,
+    "mean_cost": null,
+    "mean_input_tokens": null,
+    "mean_latency_ms": 958.8964758333323,
+    "mean_model_latency_ms": null,
+    "mean_output_tokens": null,
+    "mean_partial_success": 0.7430555555555555,
+    "mean_steps": 8.083333333333334,
+    "n_tasks": 12,
+    "recovery_attempts": 27,
+    "recovery_success_rate": 1.0,
+    "state_corruption_rate": 0.4166666666666667,
+    "task_success_rate": 0.5833333333333334,
+    "usage_coverage": 0.0
+  },
+  "doctor": {
+    "browser_optional_ready": true,
+    "commands": {
+      "pytest": "/opt/pyvenv/bin/pytest",
+      "python": "/opt/pyvenv/bin/python"
+    },
+    "note": "browser_optional_ready means the Python Playwright package is importable; browser binaries are validated by the browser smoke test.",
+    "ok_core": true,
+    "packages": {
+      "anthropic": false,
+      "numpy": true,
+      "openai": false,
+      "pandas": true,
+      "playwright": true,
+      "pytest": true,
+      "sklearn": true,
+      "yaml": true
+    },
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "providers": {
+      "anthropic": {
+        "credential_present": false,
+        "sdk_available": false
+      },
+      "openai": {
+        "credential_present": false,
+        "sdk_available": false
+      }
+    },
+    "python": "3.13.5"
+  },
+  "local_smoke_final": {
+    "catastrophic_action_rate": 0.0,
+    "cost_coverage": 0.0,
+    "cost_per_success": null,
+    "error_propagation_depth": 1.0,
+    "exact_eval_leakage": 0,
+    "failure_distribution_js": 0.12799488265195214,
+    "failure_events": 15,
+    "failure_recurrence_rate": 0.6666666666666666,
+    "failure_type_counts": {
+      "grounding": 3,
+      "memory": 2,
+      "planning": 8,
+      "state_tracking": 2
+    },
+    "failures_per_task": 1.5,
+    "first_failure_position": 0.14166666666666666,
+    "frontier_net_risk_change": 0.14636695795339438,
+    "frontier_risk_after": 1.0898958333333335,
+    "frontier_risk_before": 0.9435288753799391,
+    "frontier_summary": {
+      "contracting": 2,
+      "emergent": 2,
+      "extinct": 2
+    },
+    "frontier_topology_events": 2,
+    "generated": 12,
+    "iteration": 2,
+    "matching_ambiguous_rate": 0.5,
+    "mean_cost": null,
+    "mean_input_tokens": null,
+    "mean_latency_ms": 1.0283635999996932,
+    "mean_model_latency_ms": null,
+    "mean_output_tokens": null,
+    "mean_partial_success": 0.9666666666666666,
+    "mean_steps": 6.4,
+    "n_clusters": 4,
+    "n_failures_for_curriculum": 16,
+    "n_tasks": 10,
+    "near_eval_duplicate_pairs": 0,
+    "paired_success_delta": {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "mean": 0.0,
+      "n": 10
+    },
+    "recovery_attempts": 7,
+    "recovery_success_rate": 0.7142857142857143,
+    "rejected": 0,
+    "risk_displacement_ratio": 1.3263267227319757,
+    "risk_introduced": 0.5948958333333334,
+    "risk_removed": 0.44852887537993913,
+    "silhouette": 0.5802938399671169,
+    "split": "eval",
+    "state_corruption_rate": 0.3,
+    "task_success_rate": 0.9,
+    "usage_coverage": 0.0,
+    "verified": 12
+  },
+  "release": "1.1.0",
+  "test_count": 36,
+  "tests_passed": true,
+  "truth_boundary": {
+    "human_calibration_completed": false,
+    "proprietary_provider_models_executed": false,
+    "provider_adapters_offline_tested": true,
+    "sota_claim_supported": false,
+    "synthetic_usage_removed": true
+  }
+}
