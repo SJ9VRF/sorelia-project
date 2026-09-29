@@ -1,0 +1,283 @@
+{
+  "claims": [
+    {
+      "claim": "The local SORELIA pipeline executes end to end and writes longitudinal failure-frontier artifacts.",
+      "evidence": [
+        "artifacts/v100_smoke/metrics.json",
+        "artifacts/v100_smoke/frontier_i2.json",
+        "artifacts/v100_smoke/run_manifest.json",
+        "artifacts/v100_smoke/evidence_index.json"
+      ],
+      "id": "C1",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "The fixed-budget comparison gives every curriculum the same number of verified training tasks per iteration.",
+      "evidence": [
+        "artifacts/v100_compare.json",
+        "tests/test_compare_contract.py"
+      ],
+      "id": "C2",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "The SORELIA comparison path uses longitudinal frontier transitions rather than the legacy static scheduler after the first training round.",
+      "evidence": [
+        "src/sorelia/experiments.py",
+        "tests/test_compare_contract.py",
+        "artifacts/v100_compare.json"
+      ],
+      "id": "C3",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "The repository contains an executable real Chromium/Playwright fixture path with state-based grading.",
+      "evidence": [
+        "src/sorelia/adapters/playwright_env.py",
+        "tests/test_playwright_env.py",
+        "artifacts/browser_smoke.json"
+      ],
+      "id": "C4",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "SORELIA outperforms state-of-the-art frontier computer-use agents.",
+      "evidence": [],
+      "id": "C5",
+      "status": "unsupported-do-not-claim",
+      "tier": "paper-scale"
+    },
+    {
+      "claim": "SORELIA improves frontier-model reliability under paper-scale real-agent evaluation.",
+      "evidence": [],
+      "id": "C6",
+      "status": "unsupported-do-not-claim",
+      "tier": "paper-scale"
+    },
+    {
+      "claim": "The evaluation harness supports repeated task trials and paired bootstrap/randomization inference for multiseed SORELIA-vs-baseline comparisons.",
+      "evidence": [
+        "src/sorelia/infra/rollout.py",
+        "src/sorelia/analysis/statistics.py",
+        "src/sorelia/experiments_multiseed.py",
+        "tests/test_repeated_trials.py",
+        "tests/test_statistics_paired.py",
+        "docs/STATISTICAL_PROTOCOL.md"
+      ],
+      "id": "repeated-trial-paired-inference",
+      "status": "supported"
+    },
+    {
+      "claim": "Cross-round primary mechanism identity is assigned globally rather than greedily.",
+      "evidence": [
+        "src/sorelia/analysis/frontier.py",
+        "tests/test_frontier_optimal_matching.py"
+      ],
+      "id": "optimal-frontier-matching",
+      "status": "supported"
+    },
+    {
+      "claim": "The v0.7 repeated-trial synthetic release smoke does not support a SORELIA superiority claim and is retained as a null/adverse engineering result.",
+      "evidence": [
+        "artifacts/v070_release_multiseed.json",
+        "docs/RESULTS_V070_RELEASE_SMOKE.md"
+      ],
+      "id": "v070-null-smoke",
+      "status": "supported"
+    },
+    {
+      "claim": "The fixed-budget benchmark includes an executable static failure-priority baseline distinct from longitudinal SORELIA.",
+      "evidence": [
+        "src/sorelia/experiments.py",
+        "tests/test_priority_baseline.py",
+        "artifacts/v100_compare.json"
+      ],
+      "id": "v080-static-priority",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "The harness executes and reports a deterministic shifted stress split separately from IID held-out evaluation.",
+      "evidence": [
+        "src/sorelia/benchmarks/tasks.py",
+        "tests/test_shifted_eval.py",
+        "artifacts/v100_compare.json",
+        "artifacts/v100_ablations.json"
+      ],
+      "id": "v080-stress-split",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "Cross-round mechanism matches report similarity and ambiguity margins.",
+      "evidence": [
+        "src/sorelia/analysis/frontier.py",
+        "tests/test_matching_calibration.py",
+        "artifacts/v100_smoke/frontier_i2.json"
+      ],
+      "id": "v080-match-calibration",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "The repository has an executable core ablation harness for full, static-priority, no-exploration, and single-iteration variants.",
+      "evidence": [
+        "src/sorelia/experiments_ablation.py",
+        "tests/test_ablation_harness.py",
+        "artifacts/v100_ablations.json"
+      ],
+      "id": "v080-core-ablations",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "The end-to-end and comparison harnesses block exact train/eval task-ID or semantic-fingerprint leakage and report near-duplicate diagnostics.",
+      "evidence": [
+        "src/sorelia/analysis/contamination.py",
+        "src/sorelia/pipeline.py",
+        "src/sorelia/experiments.py",
+        "tests/test_contamination.py",
+        "artifacts/v100_smoke/metrics.json"
+      ],
+      "id": "v090-contamination-gate",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "The ablation harness executes shuffled-failure-label and random-cluster-assignment negative controls.",
+      "evidence": [
+        "src/sorelia/experiments_ablation.py",
+        "tests/test_negative_controls.py",
+        "artifacts/v100_ablations.json",
+        "docs/NEGATIVE_CONTROLS.md"
+      ],
+      "id": "v090-negative-controls",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "The repository exports blank human matching-annotation packets and can score inter-annotator agreement and matcher-vs-human calibration without fabricating human judgments.",
+      "evidence": [
+        "src/sorelia/analysis/calibration.py",
+        "tests/test_human_calibration_protocol.py",
+        "docs/HUMAN_CALIBRATION_PROTOCOL.md",
+        "artifacts/v100_smoke/matching_annotation_packet_i2.jsonl"
+      ],
+      "id": "v090-human-calibration-infra",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "Automatic failure-mechanism matching is validated against human annotations on real-agent trajectories.",
+      "evidence": [],
+      "id": "v090-human-calibration-result",
+      "status": "unsupported-do-not-claim",
+      "tier": "paper-scale"
+    },
+    {
+      "claim": "The rollout engine exposes an observation-aware provider-agnostic model boundary and records agent-supplied model identity.",
+      "evidence": [
+        "src/sorelia/schema.py",
+        "src/sorelia/interfaces.py",
+        "src/sorelia/adapters/model_agent.py",
+        "src/sorelia/infra/rollout.py",
+        "tests/test_model_adapter_contract.py"
+      ],
+      "id": "v100-observation-aware-model-boundary",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "Flagship end-to-end runs write a deterministic benchmark split manifest with per-task fingerprints and split SHA-256 digests before training.",
+      "evidence": [
+        "src/sorelia/benchmark_manifest.py",
+        "src/sorelia/pipeline.py",
+        "tests/test_benchmark_manifest.py",
+        "artifacts/v100_smoke/benchmark_manifest.json"
+      ],
+      "id": "v100-benchmark-identity",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "The repository exposes a runtime doctor that separates core dependency readiness from optional browser integration readiness.",
+      "evidence": [
+        "src/sorelia/doctor.py",
+        "src/sorelia/cli.py",
+        "tests/test_doctor.py"
+      ],
+      "id": "v100-runtime-doctor",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "The repository contains optional OpenAI Responses and Anthropic Messages adapters whose request/response and usage parsing paths are executable without credentials through injected fake clients.",
+      "evidence": [
+        "src/sorelia/adapters/provider_agents.py",
+        "tests/test_provider_agents.py",
+        "docs/PROVIDER_INTEGRATION.md"
+      ],
+      "id": "v110-provider-adapters",
+      "status": "supported",
+      "tier": "implementation-tested"
+    },
+    {
+      "claim": "Rollouts no longer invent token counts or monetary cost for agents that do not report measured usage, and aggregate metrics distinguish unknown usage/cost from measured zero.",
+      "evidence": [
+        "src/sorelia/infra/rollout.py",
+        "src/sorelia/evals/metrics.py",
+        "tests/test_usage_accounting.py",
+        "tests/test_metrics_usage_unknown.py",
+        "artifacts/v110_smoke/metrics.json",
+        "docs/USAGE_ACCOUNTING.md"
+      ],
+      "id": "v110-no-fake-usage",
+      "status": "supported",
+      "tier": "engineering-executed"
+    },
+    {
+      "claim": "OpenAI or Anthropic proprietary frontier models were executed in the released SORELIA experiments.",
+      "evidence": [],
+      "id": "v110-provider-executed",
+      "status": "unsupported-do-not-claim",
+      "tier": "external-provider-run"
+    },
+    {
+      "id": "public_flagship_page_contract",
+      "status": "supported",
+      "claim": "The flagship project page contains the required 14-section reviewer path and release-tested local artifact links.",
+      "evidence": [
+        "website/index.html",
+        "tests/test_project_page.py"
+      ]
+    },
+    {
+      "id": "evidence_grounded_demo_video",
+      "status": "supported",
+      "claim": "The released MP4 is an evidence-grounded trajectory replay visualization tied to a retained Chromium fixture, not a claimed screen recording or frontier-model run.",
+      "evidence": [
+        "website/assets/sorelia-demo.mp4",
+        "artifacts/browser_smoke.json",
+        "docs/DEMO_NARRATION.md",
+        "tests/test_project_page.py"
+      ]
+    },
+    {
+      "id": "public_visual_assets",
+      "status": "supported",
+      "claim": "The release includes standalone architecture, failure-frontier and portfolio-card visual assets used by the public project page and paper.",
+      "evidence": [
+        "website/assets/architecture.svg",
+        "website/assets/failure-frontier.svg",
+        "website/assets/project-card.png",
+        "paper/architecture.png",
+        "paper/failure-frontier.png"
+      ]
+    }
+  ],
+  "schema_version": 1
+}

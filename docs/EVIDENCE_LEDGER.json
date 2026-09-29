@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "project": "SORELIA",
+  "author": "Aura Yavary",
+  "release": "1.7.0",
+  "git_history_boundary": "Retained Git history begins at the imported v1.5.0 release candidate. Earlier method evolution is supported by archived artifacts and notes, not reconstructed commits.",
+  "threads": [
+    {
+      "id": "THREAD-001",
+      "title": "From scalar success to risk displacement",
+      "hypothesis": "Task-success improvement is insufficient to characterize post-training reliability.",
+      "experiments": [
+        "EXP-003",
+        "EXP-004"
+      ],
+      "failed_assumptions": [
+        "F1"
+      ],
+      "decisions": [
+        "D1",
+        "D5"
+      ],
+      "raw": [
+        "artifacts/v110_smoke/metrics.json",
+        "artifacts/plots/v110_risk_displacement.png",
+        "artifacts/eval_runs/v100_compare.json"
+      ],
+      "current_conclusion": "A policy update can preserve aggregate task success while introducing more frontier risk than it removes. This is engineering-smoke evidence, not a frontier-model result.",
+      "history_note": "The methodological changes predate the retained Git history boundary; current Evidence Layer commits preserve the surviving artifacts rather than reconstructing missing commits.",
+      "evidence": [
+        {
+          "path": "artifacts/v110_smoke/metrics.json",
+          "sha256": "f83ed6179f93dba47bf13361a9fb600a0ae899e498a1f95774056cbf5128553f",
+          "bytes": 4212
+        },
+        {
+          "path": "artifacts/plots/v110_risk_displacement.png",
+          "sha256": "9b03ac6c31916f30f4d750354a502df4c1f89a02dd8de41fb3d38401f8523ea2",
+          "bytes": 43361
+        },
+        {
+          "path": "artifacts/eval_runs/v100_compare.json",
+          "sha256": "e9f168214a9b53c13e7c3adae6790430a9addb17841c8fdf4d99cf3f375acb66",
+          "bytes": 29448
+        }
+      ],
+      "implementation": [
+        {
+          "path": "src/sorelia/evidence.py",
+          "sha256": "7d349fb938b030e5e46b36cf65a70af396d008461bfb40dbc2bc9e371790094f",
+          "bytes": 1192
+        },
+        {
+          "path": "src/sorelia/features.py",
+          "sha256": "9eaf87057c092866019b31aed1f13e07d25fba44a3ff86922b33dd419974dc6c",
+          "bytes": 1137
+        },
+        {
+          "path": "src/sorelia/pipeline.py",
+          "sha256": "394062f856803999efed376476e83e10161df905b9928febd2244598a486d1a1",
+          "bytes": 7401
+        },
+        {
+          "path": "configs/release_gate.yaml",
+          "sha256": "17c89ce4d20a4c42cc08d30a4de810e218b4f19375e3eae926921b556444b7c7",
+          "bytes": 233
+        }
+      ]
+    },
+    {
+      "id": "THREAD-002",
+      "title": "Failure identity: coarse labels \u2192 optimal matching \u2192 ambiguity calibration",
+      "hypothesis": "Longitudinal failure analysis requires mechanism identity that survives changing cluster IDs.",
+      "experiments": [
+        "EXP-009"
+      ],
+      "failed_assumptions": [
+        "F3",
+        "F4"
+      ],
+      "decisions": [
+        "D2",
+        "D8"
+      ],
+      "raw": [
+        "artifacts/v110_smoke/frontier_i2.json",
+        "artifacts/v110_smoke/matching_annotation_packet_i2.jsonl"
+      ],
+      "current_conclusion": "Stable mechanism matching is necessary but not self-validating; ambiguous matches remain a human-calibration gate.",
+      "history_note": "No historical commit is claimed for the original coarse-label or greedy versions; the retained artifacts and decision record document the correction.",
+      "evidence": [
+        {
+          "path": "artifacts/v110_smoke/frontier_i2.json",
+          "sha256": "f760f9f150db3dd3fc659ff767cfbbdc136af51c8e560e3723767235f2796d90",
+          "bytes": 6857
+        },
+        {
+          "path": "artifacts/v110_smoke/matching_annotation_packet_i2.jsonl",
+          "sha256": "1662914f220720ccff9ce1ef598b536683f076c93d41b165cc7e525d7a684092",
+          "bytes": 532
+        }
+      ],
+      "implementation": [
+        {
+          "path": "src/sorelia/evidence.py",
+          "sha256": "7d349fb938b030e5e46b36cf65a70af396d008461bfb40dbc2bc9e371790094f",
+          "bytes": 1192
+        },
+        {
+          "path": "src/sorelia/features.py",
+          "sha256": "9eaf87057c092866019b31aed1f13e07d25fba44a3ff86922b33dd419974dc6c",
+          "bytes": 1137
+        },
+        {
+          "path": "src/sorelia/schema.py",
+          "sha256": "298b1b6df1ee4971876aaf56c64f1d57da1c00d4da5c88191e35311f38dd2e1f",
+          "bytes": 3609
+        },
+        {
+          "path": "docs/HUMAN_CALIBRATION_PROTOCOL.md",
+          "sha256": "19a6dfb7228b3452ae425e0caf402a07f20b0aac2622fac6d06c858a2a7b3b04",
+          "bytes": 2026
+        }
+      ]
+    },
+    {
+      "id": "THREAD-003",
+      "title": "Comparison integrity: mislabeled SORELIA arm \u2192 fixed-budget controlled benchmark",
+      "hypothesis": "The moving-frontier scheduler should be compared under identical verified-data budgets.",
+      "experiments": [
+        "EXP-004",
+        "EXP-005"
+      ],
+      "failed_assumptions": [
+        "F5"
+      ],
+      "decisions": [
+        "D3",
+        "D5"
+      ],
+      "raw": [
+        "artifacts/eval_runs/v100_compare.json",
+        "artifacts/v100_compare.json.manifest.json",
+        "artifacts/v070_release_multiseed.json"
+      ],
+      "current_conclusion": "The old comparison was invalid for attributing effects to SORELIA; regenerated comparisons enforce the actual frontier-aware path and equal verified-data budgets.",
+      "history_note": "The v0.5 bug predates retained Git history. Its existence is disclosed rather than backfilled with a fake commit.",
+      "evidence": [
+        {
+          "path": "artifacts/eval_runs/v100_compare.json",
+          "sha256": "e9f168214a9b53c13e7c3adae6790430a9addb17841c8fdf4d99cf3f375acb66",
+          "bytes": 29448
+        },
+        {
+          "path": "artifacts/v100_compare.json.manifest.json",
+          "sha256": "7db58628e26b06798fec3a0fc5061f86f8ca98c7cf02ba6e6b8fbb0f510348bd",
+          "bytes": 594
+        },
+        {
+          "path": "artifacts/v070_release_multiseed.json",
+          "sha256": "d8f81d7a647b81d8ef42bd174062f62c8870c416b4e5a354b5b78ebda7ae2ab9",
+          "bytes": 76548
+        }
+      ],
+      "implementation": [
+        {
+          "path": "src/sorelia/experiments.py",
+          "sha256": "02586a48a8d24f6601e5048dd0104bb7590a843a976f6a691029748627b1cdf5",
+          "bytes": 7495
+        },
+        {
+          "path": "src/sorelia/experiments_multiseed.py",
+          "sha256": "9dd19805466bcdfc75a3bd36454275acbbf7bf8ce808f6cb652761185a9331ae",
+          "bytes": 2986
+        },
+        {
+          "path": "tests/test_compare_contract.py",
+          "sha256": "2921f04f133cb6e93495972d116c47f8f612e4a20c9db091f36f08285913f0dd",
+          "bytes": 811
+        },
+        {
+          "path": "configs/release_gate.yaml",
+          "sha256": "17c89ce4d20a4c42cc08d30a4de810e218b4f19375e3eae926921b556444b7c7",
+          "bytes": 233
+        }
+      ]
+    },
+    {
+      "id": "THREAD-004",
+      "title": "Usage accounting: synthetic precision \u2192 measured-or-null",
+      "hypothesis": "Efficiency metrics are only meaningful when usage is measured rather than fabricated.",
+      "experiments": [
+        "EXP-002"
+      ],
+      "failed_assumptions": [
+        "F6"
+      ],
+      "decisions": [
+        "D6",
+        "D7"
+      ],
+      "raw": [
+        "artifacts/browser_smoke.json",
+        "artifacts/browser_smoke_stdout.txt"
+      ],
+      "current_conclusion": "Unknown token/cost values remain null with explicit coverage; provider failures are separated from scientific agent failures.",
+      "history_note": "The correction predates retained Git history; current release contracts enforce the truthful accounting behavior.",
+      "evidence": [
+        {
+          "path": "artifacts/browser_smoke.json",
+          "sha256": "cc3dc5004ab78bf8acc5ecd6c6e9ed32c3d87a6ea23121953cc5465e3b6af7ef",
+          "bytes": 182331
+        },
+        {
+          "path": "artifacts/browser_smoke_stdout.txt",
+          "sha256": "4090cf6b96122e3e7ccbbf2f75a8361d532fa04e1007a3344259994341bc8826",
+          "bytes": 750
+        }
+      ],
+      "implementation": [
+        {
+          "path": "src/sorelia/schema.py",
+          "sha256": "298b1b6df1ee4971876aaf56c64f1d57da1c00d4da5c88191e35311f38dd2e1f",
+          "bytes": 3609
+        },
+        {
+          "path": "src/sorelia/pipeline.py",
+          "sha256": "394062f856803999efed376476e83e10161df905b9928febd2244598a486d1a1",
+          "bytes": 7401
+        },
+        {
+          "path": "tests/test_metrics_usage_unknown.py",
+          "sha256": "b31a3bd53b4d880ffd81b180b487148e11ffb51c75f6d600e669d3305a3af8fd",
+          "bytes": 1190
+        },
+        {
+          "path": "docs/USAGE_ACCOUNTING.md",
+          "sha256": "d4bf85f937822ccdcdcff9e4d7981352bf2a185bc8862a1b274d895d22c91ff6",
+          "bytes": 588
+        }
+      ]
+    }
+  ]
+}

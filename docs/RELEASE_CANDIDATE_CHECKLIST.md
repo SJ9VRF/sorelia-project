@@ -1,0 +1,23 @@
+# v1.7.0 release-candidate checklist
+
+- [x] author shown as Aura Yavary
+- [x] version consistent across package/citation/public pages
+- [x] source tests pass
+- [x] claim/evidence audit passes
+- [x] public-release validator passes
+- [x] local Markdown links resolve
+- [x] no unresolved TODO/FIXME/public placeholder URLs
+- [x] reviewer demo path documented
+- [x] real Chromium fixture retained
+- [x] paper PDF present
+- [x] homepage/demo/video present
+- [x] benchmark, data, system, and model cards present
+- [x] experiment registry and decision log present
+- [x] license, citation, contributing, security, code of conduct present
+- [x] Docker/devcontainer definitions present
+- [x] CI and optional browser-smoke CI present
+- [x] unknown usage/cost is not fabricated
+- [x] null/adverse results remain visible
+- [ ] frontier-model post-training completed — intentionally pending
+- [ ] independent human calibration completed — intentionally pending
+- [ ] SOTA/production claim supported — intentionally pending
