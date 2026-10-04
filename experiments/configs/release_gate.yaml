@@ -1,0 +1,16 @@
+seed: 17
+benchmark:
+  train_tasks: 12
+  eval_tasks: 10
+  stress_eval_tasks: 6
+  eval_trials: 1
+rollout:
+  allow_recovery: true
+sorelia:
+  iterations: 2
+clustering:
+  k: 4
+generation:
+  budget: 12
+curriculum:
+  exploration_ratio: 0.2

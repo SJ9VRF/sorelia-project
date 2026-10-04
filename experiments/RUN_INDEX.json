@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "release": "v1.7.0",
+  "author": "Aura Yavary",
+  "experiment_count": 9,
+  "experiments": [
+    {
+      "id": "EXP-001",
+      "name": "Local closed-loop smoke",
+      "status": "executed_engineering_evidence",
+      "hypothesis": "Can the complete collect→cluster→allocate→verify→train→reevaluate loop execute reproducibly?",
+      "setup": "Local synthetic environment; deterministic state-based graders; fixed seed.",
+      "result": "The end-to-end loop executed and emitted trajectories, clusters, allocations, verified tasks, corrections, metrics and manifests.",
+      "interpretation": "The system was executable, but success alone was insufficient to characterize what changed in the failure distribution.",
+      "next_decision": "Add longitudinal failure-frontier instrumentation rather than only aggregate success.",
+      "log_path": "executed/exp-001-local-closed-loop-smoke.md",
+      "source_log_sha256": "95e3980bdab85cb301deedeaacfb279f4ddedefd5ec7b131696f09c6b3594756"
+    },
+    {
+      "id": "EXP-002",
+      "name": "Chromium browser fixture",
+      "status": "executed_engineering_evidence",
+      "hypothesis": "Does the environment abstraction survive a real browser DOM/action loop?",
+      "setup": "12 isolated Chromium tasks using the retained browser fixture and state-based grading.",
+      "result": "58.3% task success; 54 failure events; 27 recovery attempts; all attempted recoveries succeeded. Token/cost coverage remained unknown rather than fabricated.",
+      "interpretation": "The browser path was real enough to expose trajectories and recovery, but far too narrow for a scientific computer-use claim.",
+      "next_decision": "Keep it as engineering evidence; require independent real-site tasks for paper-scale claims.",
+      "log_path": "executed/exp-002-chromium-browser-fixture.md",
+      "source_log_sha256": "d175205c4622dc6e92641d767bb8849c6b45ba68d3e80f9dbb0c5f857cc61758"
+    },
+    {
+      "id": "EXP-003",
+      "name": "Moving failure-frontier smoke",
+      "status": "executed_engineering_evidence",
+      "hypothesis": "Can a policy update leave success unchanged while shifting reliability risk?",
+      "setup": "Local closed-loop smoke with mechanism matching across updates.",
+      "result": "At iteration 2, task success stayed at 0.90 while risk introduced (0.5949) exceeded risk removed (0.4485), displacement ratio 1.3263.",
+      "interpretation": "Aggregate success hid an adverse redistribution of failure risk.",
+      "next_decision": "Promote risk displacement and mechanism transition states to core SORELIA outputs.",
+      "log_path": "executed/exp-003-moving-failure-frontier-smoke.md",
+      "source_log_sha256": "9ad1a7c419006a43bbabbb0f17227c52b41d38a7a398cd521f941d138e9ea33d"
+    },
+    {
+      "id": "EXP-004",
+      "name": "Fixed-budget curriculum comparison",
+      "status": "executed_engineering_evidence",
+      "hypothesis": "Does frontier-aware allocation dominate simpler curricula under equal verified-data budgets?",
+      "setup": "Same base policy, optimization path, eval set and verified training-data budget; compare SORELIA, static priority, frequency, random, difficulty and human-balanced.",
+      "result": "In the retained v0.8 smoke, SORELIA did not win: human-balanced had best IID success (99.07%); frequency had best stress success (96.30%).",
+      "interpretation": "The toy harness does not support a SORELIA superiority claim. Equal-budget controls are necessary because plausible simpler baselines remain strong.",
+      "next_decision": "Retain null/adverse results and move superiority claims behind real-agent experiments.",
+      "log_path": "executed/exp-004-fixed-budget-curriculum-comparison.md",
+      "source_log_sha256": "bf0a7b8ba1d3faaee53eaf7528bbaa10c26d7501faaf048d626c42dd1eb65e01"
+    },
+    {
+      "id": "EXP-005",
+      "name": "Repeated-trial / multiseed inference",
+      "status": "executed_engineering_evidence",
+      "hypothesis": "Are apparent differences stable under repeated stochastic evaluation?",
+      "setup": "Repeated task trials across multiple seeds with paired bootstrap and paired randomization tests.",
+      "result": "Small retained runs produced mixed effects and intervals that often included zero; no stable advantage was established.",
+      "interpretation": "Single-draw agent evaluation was too brittle for claims.",
+      "next_decision": "Make repeated trials and paired inference mandatory in paper-scale protocol.",
+      "log_path": "executed/exp-005-repeated-trial---multiseed-inference.md",
+      "source_log_sha256": "0992c6e7630f3ea5349389d7a63174f6168adb4204bb847872bcc76795bc7356"
+    },
+    {
+      "id": "EXP-006",
+      "name": "Shifted stress split",
+      "status": "executed_engineering_evidence",
+      "hypothesis": "Do conclusions survive a deterministic harder/longer perturbation split?",
+      "setup": "IID and shifted/stress split with increased difficulty, horizon and perturbation intensity.",
+      "result": "Methods changed ordering between IID and stress metrics; frequency led stress success in the retained v0.8 single-seed smoke while human-balanced led IID.",
+      "interpretation": "A single IID aggregate can hide robustness differences. The stress split is useful plumbing but not real website-family OOD.",
+      "next_decision": "Keep separate stress metrics and require held-out real environments before ecological-generalization claims.",
+      "log_path": "executed/exp-006-shifted-stress-split.md",
+      "source_log_sha256": "a3bdab03d371715c3d516a293519704cda5897eab79b3c64e08f4f7b2f612c5e"
+    },
+    {
+      "id": "EXP-007",
+      "name": "Exploration ablation",
+      "status": "executed_engineering_evidence",
+      "hypothesis": "Does reserving exploration budget reliably improve the adaptive curriculum?",
+      "setup": "Full SORELIA vs no-exploration ablation under the same local harness.",
+      "result": "In retained toy runs, removing exploration sometimes improved IID success; the effect was not monotonic.",
+      "interpretation": "The intuitive \"exploration always helps\" hypothesis failed in the toy setting.",
+      "next_decision": "Treat exploration ratio as an empirical hyperparameter and report ablation, not a default virtue.",
+      "log_path": "executed/exp-007-exploration-ablation.md",
+      "source_log_sha256": "65bf6e6896f919abd88128c3d6f05dac1d6e1a351a47b0e44ec749d9f196570c"
+    },
+    {
+      "id": "EXP-008",
+      "name": "Semantic negative controls",
+      "status": "executed_engineering_evidence",
+      "hypothesis": "Does the method depend on meaningful failure labels/clusters?",
+      "setup": "Shuffled failure labels and random cluster assignment, alongside full SORELIA and static priority.",
+      "result": "In v0.9 smoke, random clusters and static priority outperformed full SORELIA on IID success; shuffled labels also remained competitive.",
+      "interpretation": "Toy task structure may provide enough non-semantic signal that the current environment cannot establish causal value of semantic mechanism tracking.",
+      "next_decision": "Require stronger real-agent tasks and retain negative controls as a falsification gate.",
+      "log_path": "executed/exp-008-semantic-negative-controls.md",
+      "source_log_sha256": "8e3ad5566c9e59c1b56233dcc18fe7f20c19b708206600e3adb7c8d6ed61a0c0"
+    },
+    {
+      "id": "EXP-009",
+      "name": "Matching ambiguity audit",
+      "status": "executed_engineering_evidence",
+      "hypothesis": "Are cross-round mechanism identities certain enough to be treated as ground truth?",
+      "setup": "Optimal bipartite matching with similarity margins and ambiguity flags.",
+      "result": "The v0.9 integrity run reported 25% ambiguous matches; a later local frontier example reported 50% ambiguity among matched mechanisms.",
+      "interpretation": "Automatic mechanism identity is not validated ground truth.",
+      "next_decision": "Generate blank human calibration packets and block validated-identity claims until independent annotations exist.",
+      "log_path": "executed/exp-009-matching-ambiguity-audit.md",
+      "source_log_sha256": "711215a818c4541cbb4e07efeeb6d005a6bd9e80cebbba38b1876de3d7e133f0"
+    }
+  ]
+}

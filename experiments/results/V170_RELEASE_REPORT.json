@@ -1,0 +1,15 @@
+{
+  "release": "1.7.0",
+  "author": "Aura Yavary",
+  "tests": "57 passed",
+  "claim_evidence_audit": "26 claims, 0 errors, 0 warnings",
+  "traceability": {
+    "ok": true,
+    "threads": 4,
+    "errors": []
+  },
+  "public_release_validator": "public release version: 1.7.0\nerrors: 0",
+  "reviewer_demo_status": "doctor/audit/traceability/13 focused tests passed; browser step exceeded this chat execution timeout. Existing retained Chromium smoke remains unchanged by v1.7 docs/traceability-only changes.",
+  "git_head": "bae0942568395650e178bb396f9d0aa8852a1857",
+  "truth_boundary": "No frontier-model superiority, completed human calibration, or production reliability claim."
+}
