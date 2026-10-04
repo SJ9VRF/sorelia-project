@@ -1,6 +1,14 @@
 {
-  "file_count": 284,
+  "package": "SORELIA-v1.7.0-ALL-IN-ONE-CORRECTED",
+  "author": "Aura Yavary",
+  "correction": "Populate previously empty repository experiments/ workspace; scientific results unchanged.",
+  "file_count": 314,
   "files": [
+    {
+      "path": "README-CORRECTION.txt",
+      "size_bytes": 591,
+      "sha256": "d5aa4674424255b26dc82df27ee2184928dbd886d5b7c274c9f5d9ed48ba161d"
+    },
     {
       "path": "SORELIA-v1.7.0/.devcontainer/devcontainer.json",
       "size_bytes": 272,
@@ -73,13 +81,18 @@
     },
     {
       "path": "SORELIA-v1.7.0/MANIFEST.sha256",
-      "size_bytes": 37000,
-      "sha256": "a2abb1b3f6bf6fdbf296a37bd5fd351fbfd5c78546fdc5938137403e32df1889"
+      "size_bytes": 31171,
+      "sha256": "647fa19a8922535bf5bebc718c2a246689a9caa3f4a0c5cdaddd9a9a20014fbd"
     },
     {
       "path": "SORELIA-v1.7.0/Makefile",
       "size_bytes": 1121,
       "sha256": "a77c9db850c3059136fda2f244fe2ad54ac3c16a7c3b47e1f5d405e8235e936a"
+    },
+    {
+      "path": "SORELIA-v1.7.0/PACKAGING_CORRECTION.md",
+      "size_bytes": 720,
+      "sha256": "7ce8e9372288e8197aa0c64b5fdcc0e90b912b4bedf9a1213adb7670a53157f8"
     },
     {
       "path": "SORELIA-v1.7.0/README.md",
@@ -937,6 +950,136 @@
       "sha256": "7cee86aff6eb708885ebfb2157c128c0d275fa333fa96c07d3c219e93be106f3"
     },
     {
+      "path": "SORELIA-v1.7.0/experiments/EXPERIMENTS.md",
+      "size_bytes": 2472,
+      "sha256": "b9c213c00b63493b1c7e958c114bfb0eb9ed2b817de7832211131a9b056da98e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/EXPERIMENT_MATRIX.md",
+      "size_bytes": 3754,
+      "sha256": "3bd7ec5179663d774dab94597ff35c9fd32970340aaf17a9f00d89592e5221fa"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/README.md",
+      "size_bytes": 1690,
+      "sha256": "7e80bd9587e8ac221382b08582f98e419ed89a3aeca7b203cd14954ba1dd77b2"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/RUN_INDEX.json",
+      "size_bytes": 8275,
+      "sha256": "51bdef8f2b78fc77dddccf3417cef5012739a03211ff35c41b45ed776ac9d117"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/configs/paper_smoke.yaml",
+      "size_bytes": 270,
+      "sha256": "ad73e6ba46283e5e4c35dcc2a235881cffc1b54633cf836423fbbde0fbd3fcd5"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/configs/release_gate.yaml",
+      "size_bytes": 233,
+      "sha256": "17c89ce4d20a4c42cc08d30a4de810e218b4f19375e3eae926921b556444b7c7"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/configs/release_smoke.yaml",
+      "size_bytes": 264,
+      "sha256": "3465219b697318f3973cae7b15edaeb770a70757a9987496c30513077642b383"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/configs/smoke.yaml",
+      "size_bytes": 235,
+      "sha256": "899ae47d858f6c7960e9d901dc0350315a7c9ce84612bd67df51b94f823b13e4"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/configs/v080_release.yaml",
+      "size_bytes": 261,
+      "sha256": "118e5ebd398118a2158bfd94b1b1ad1915cb9a21734da2d9293aeb4250e75597"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/configs/v090_release.yaml",
+      "size_bytes": 261,
+      "sha256": "118e5ebd398118a2158bfd94b1b1ad1915cb9a21734da2d9293aeb4250e75597"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/executed/exp-001-local-closed-loop-smoke.md",
+      "size_bytes": 731,
+      "sha256": "95e3980bdab85cb301deedeaacfb279f4ddedefd5ec7b131696f09c6b3594756"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/executed/exp-002-chromium-browser-fixture.md",
+      "size_bytes": 754,
+      "sha256": "d175205c4622dc6e92641d767bb8849c6b45ba68d3e80f9dbb0c5f857cc61758"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/executed/exp-003-moving-failure-frontier-smoke.md",
+      "size_bytes": 645,
+      "sha256": "9ad1a7c419006a43bbabbb0f17227c52b41d38a7a398cd521f941d138e9ea33d"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/executed/exp-004-fixed-budget-curriculum-comparison.md",
+      "size_bytes": 860,
+      "sha256": "bf0a7b8ba1d3faaee53eaf7528bbaa10c26d7501faaf048d626c42dd1eb65e01"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/executed/exp-005-repeated-trial---multiseed-inference.md",
+      "size_bytes": 650,
+      "sha256": "0992c6e7630f3ea5349389d7a63174f6168adb4204bb847872bcc76795bc7356"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/executed/exp-006-shifted-stress-split.md",
+      "size_bytes": 767,
+      "sha256": "a3bdab03d371715c3d516a293519704cda5897eab79b3c64e08f4f7b2f612c5e"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/executed/exp-007-exploration-ablation.md",
+      "size_bytes": 641,
+      "sha256": "65bf6e6896f919abd88128c3d6f05dac1d6e1a351a47b0e44ec749d9f196570c"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/executed/exp-008-semantic-negative-controls.md",
+      "size_bytes": 753,
+      "sha256": "8e3ad5566c9e59c1b56233dcc18fe7f20c19b708206600e3adb7c8d6ed61a0c0"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/executed/exp-009-matching-ambiguity-audit.md",
+      "size_bytes": 681,
+      "sha256": "711215a818c4541cbb4e07efeeb6d005a6bd9e80cebbba38b1876de3d7e133f0"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/paper_scale/PENDING_EXPERIMENTS.md",
+      "size_bytes": 1709,
+      "sha256": "45745d1b8176c2bdec9e28369c6b5bae8e19762599acfdfe1fc70541952a7bc6"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/raw/README.md",
+      "size_bytes": 969,
+      "sha256": "4e6d6f00941092fe34252758293b65df6432066867d566ac5393baa91d00a909"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/results/V170_RELEASE_REPORT.json",
+      "size_bytes": 683,
+      "sha256": "f0890e9ca3db19efc48441a8141992da8443eb08a855eebe02c77084d0aa4c44"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/results/browser_smoke.json",
+      "size_bytes": 182331,
+      "sha256": "cc3dc5004ab78bf8acc5ecd6c6e9ed32c3d87a6ea23121953cc5465e3b6af7ef"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/results/v070_release_multiseed.json",
+      "size_bytes": 76548,
+      "sha256": "d8f81d7a647b81d8ef42bd174062f62c8870c416b4e5a354b5b78ebda7ae2ab9"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/results/v100_ablations.json",
+      "size_bytes": 34153,
+      "sha256": "bc5508ef872a747fb470fbfe4b2e14b2bc536c329d40785b8011a91eba7a2a47"
+    },
+    {
+      "path": "SORELIA-v1.7.0/experiments/results/v100_compare.json",
+      "size_bytes": 29448,
+      "sha256": "e9f168214a9b53c13e7c3adae6790430a9addb17841c8fdf4d99cf3f375acb66"
+    },
+    {
       "path": "SORELIA-v1.7.0/paper/architecture.png",
       "size_bytes": 56035,
       "sha256": "a7916814a8b582aa0fc1478902ad2a722fb4dad83d9ef6670f041d1331742773"
@@ -1410,6 +1553,16 @@
       "path": "SORELIA-v1.7.0/website/traceability.html",
       "size_bytes": 2836,
       "sha256": "b13abed77e550f0ac501c9ccbce9e944e2425d767af94e3e0bca74620512b435"
+    },
+    {
+      "path": "SORELIA-v1.7.0-CORRECTED.tar.gz",
+      "size_bytes": 3147158,
+      "sha256": "2ebd41383429331544289f8c9da63bb86df6860518455c56f1b757f68f03e2bb"
+    },
+    {
+      "path": "SORELIA-v1.7.0-CORRECTED.zip",
+      "size_bytes": 3268434,
+      "sha256": "c5e07353aa821809784f4ad1ca28e550c2c6dbebfac0921d805d99e3e31d9b69"
     },
     {
       "path": "SORELIA-v1.7.0-RELEASE-REPORT.json",
